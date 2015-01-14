@@ -1,2 +1,5 @@
-# scally-presentation
-A presentation for the Scally CSS framework
+# Scally presentation
+
+A presentation for the Scally CSS framework.
+
+*Currently a WIP*.
