@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-au">
 
 	<head>
 		<meta charset="utf-8">
@@ -14,11 +14,9 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
+		<link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic,700italic" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/scally.css" id="theme">
-
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -38,351 +36,235 @@
 			<div class="slides">
 
 
+
+
 				<!-- SLIDE 1 -->
-				<section class="slide-1" data-backgroundx="#000">
-					<img src="lib/img/logo.svg" alt="Scally CSS framework" class="u-reset-img-styles">
+				<section class="tropical-gradient">
+					<img src="lib/img/logo.svg" width="250" alt="Scally CSS framework">
 				</section>
 				<!-- //SLIDE 1 -->
 
 
+
+
 				<!-- SLIDE 2 -->
 				<section>
-					<h1>How it came about?</h1>
-					<p>Scally was born at Westfield Labs and was the  from a need  an extension of a CSS framework that I'd develop over the many years of working as a UI developer.</p>
-					<p>Scally was developed for my old employer: <a href="#">Westfield Labs</a>.</p>
+					<section>
+						<h1>How it came about?</h1>
+					</section>
 
-					<aside class="notes">
-							<ol>
-								<li></li>
-							</ol>
-					</aside>
+					<section>
+						<p>Scally was created as an open source CSS framework for my old employer <a href="http://westfieldlabs.com" target="_blank">Westfield Labs</a> to be used for all Westfield UI builds, and whoever else wanted to use it.</p>
+						<p>It extended and nicely packaged up the CSS framework that I'd been developing and using over the many years working as a UI developer.</p>
+						<p>The name&hellip;</p>
+
+						<aside class="notes">
+								<ul>
+									<li>I was the lead front-end developer at Westfield Labs.</li>
+									<li>I introduced my own CSS framework to build UI mainly the new AU responsive website.</li>
+									<li>A year had gone by but the framework hadn't been updated so it was starting to feel neglected and lacked proper documentation.</li>
+									<li>I proposed that we needed to develop a proper CSS framework, WF agreed. I worked on it full-time for around 3 months collaborating with the rest of the team along the way and doing a shit load research.</li>
+									<li>Why roll your own? Inuit and SUIT CSS were the only 2 frameworks that came close to what I believed to be true OOCSS frameworks. Inuit was no longer being maintained and was showing it, and SUIT CSS used certain things in a way that I didn't quite agree with + it didn't use Sass.</li>
+									<li>I decided to name it Scally, which was a suggestion by my former head of engineering and friend Ian Tinsley, who like me is an Englishman, which is why it got named Scally</li>
+								</ul>
+						</aside>
+					</section>
+
+					<section>
+						<img src="lib/img/scally-1.jpg" class="stretch" alt="A scouser">
+					</section>
 				</section>
 				<!-- //SLIDE 2 -->
 
 
 
 
-
-
-
-
-
-				<!-- Example of nested vertical slides -->
+				<!-- SLIDE 3 -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+						<h1>What is it?</h1>
 					</section>
+
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+						<img src="lib/img/lego-1.png" width="600" alt="Some lego&trade; pieces">
+						<p>Bits and pieces to construct UI.</p>
 
 						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
+							<ul>
+								<li>Lego&trade; is the best analogy for Scally and I will show some examples later in the presentation.</li>
+							</ol>
 						</aside>
 					</section>
+
 					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
+						<p>All HTML elements render as blocks and pretty much all UI layout can be handled by a bunch of CSS rules abstracted away into reusable modules, this is what Scally does.</p>
+						<p>It is a collection of tiny, composable, configurable, interdependent modules that you can piece together how you want to, when you want to, giving you a solid, scalable CSS architecture.</p>
+					</section>
+
+					<section>
+						<h2>Key features</h2>
+						<ul>
+							<li>Highly modular following <a href="http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/" target="_blank">OOCSS</a> principles.</li>
+							<li>Light weight: <strong>37kb</strong> minified, <strong>14kb</strong> minified and gzipped (<a href="#/3/6" class="u-text-size-small">see</a>).</li>
+							<li>Responsive ready.</li>
+							<li>Unopinionated about design.</li>
+							<li><a href="http://sass-lang.com/" target="_blank">Sass</a> and <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/" target="_blank">BEM</a> (<a href="#/3/7" class="u-text-size-small">see</a>) based.</li>
+						</ul>
+
+						<aside class="notes">
+							<ul>
+								<li>
+									<ul>
+										<li>In a nutshell OOCSS basically means a CSS “object” is a repeating visual pattern, that can be abstracted into an independent snippet of HTML, CSS, and possibly JavaScript. That object can then be reused throughout a site. This allows us to build large-scale UI's (or any UI's for that matter) in a fast, maintainable, and standards-based way.</li>
+										<li>Two Main Principles of OOCSS:
+											<ul>
+												<li>Separate structure and skin <br>This means not mixing in cosmetics (like background and border styles) but instead only including the structural CSS, this ties into point #4.</li>
+												<li>Separate container and content <br>Essentially, this means “rarely use location-dependent styles”. An object should look the same no matter where you put it. Descendant selectors are a rare thing when building UI this way.</li>
+											</ul>
+										</li>
+										<li>Scally applies all of this, it's there when you need it and getting out of your way when you don't.</li>
+										<li>I will show some examples later in the presentation.</li>
+									</ul>
+								</li>
+								<li>Entire framework is 14kb gzipped however Scally allows you to only use what you need with the exception of the <strong>Core</strong> section therefore it can be as light as 6-8kb. This is a drop in the ocean compared to other site assets e.g. 1 jpeg can weigh anywhere between 20-100kb.</li>
+								<li>Is responsive ready making building responsive UI's easy. They're no absolute units used in Scally e.g. <code>px</code>, everything is fluid. Scally lets you change UI at breakpoints e.g. a grid can be 6 columns at super wide viewports, 3 columns at medium width viewports, and zero columns and small width viewports like handheld devices. However Scally doesn't force you to go responsive, you can easily create fixed width UI's with Scally.</li>
+								<li>Scally doesn't come with any design and everything is configurable. This approach means Scally acts as a solid foundation to your UI allowing you to layer on the cosmetic styles of the UI on top.</li>
+								<li>BEM is a front-end naming methodology. It is a smart way of naming your CSS classes to give them more transparency and meaning to other developers.</li>
+							</ol>
+						</aside>
+					</section>
+
+					<section>
+						<h2>The driving principle</h2>
+						<blockquote>When I start a new project, I assume it will eventually be open sourced (even if it's unlikely). This mindset leads to effortless modularization. If you think about how other people outside your company might use your code, you become much less likely to bake in proprietary configuration details or tightly coupled interfaces. This, in turn, leads to cleaner, more maintainable code. Even internal code should pretend to be open source code.</blockquote>
+						<cite class="u-text-size-small"><a href="http://tom.preston-werner.com/2011/11/22/open-source-everything.html" target="_blank">Open Source (Almost) Everything</a> by Tom Preston-Werner</cite>
+
+						<aside class="notes">
+							<ul>
+								<li>.</li>
+								<li>Forces you to scrutinise over everything you do as every bit of Scally needs to work in a way that does one thing and one thing only. The open/closed principle.</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Westfield Ticketless Parking UI</h2>
+						<img src="lib/img/westfield carpark ui.gif" alt="" class="stretch">
+						<p class="u-text-size-small">Minified &amp; gzipped: <strong>14kb</strong> (total weight) / <strong>5kb</strong> (total weight of custom CSS).</p>
+					</section>
+
+					<section>
+						<h2>BEM</h2>
+						<p>The naming convention follows this pattern:</p>
+						<pre><code class="language-css">.block {}
+.block__element {}
+.block--modifier {}</code></pre>
+						<ul class="language-css">
+						  <li><code class="token selector">.block</code> represents the higher level of an abstraction or component.</li>
+						  <li><code class="token selector">.block__element</code> represents a descendent of <code class="token selector">.block</code> that helps form <code class="token selector">.block</code>
+						as a whole.</li>
+						  <li><code class="token selector">.block--modifier</code> represents a different state or version of <code class="token selector">.block</code>.</li>
+						</ul>
 					</section>
 				</section>
+				<!-- //SLIDE 3 -->
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
 
+
+				<!-- SLIDE 4 -->
 				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+					<section>
+						<h1>What it's not</h1>
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
+
+					<section>
+						<ul>
+							<li>An all-singing all-dancing UI toolkit <em>à la</em> <a href="http://getbootstrap.com/2.3.2/" target="_blank">Twitter Bootstrap</a> or <a href="http://foundation.zurb.com/" target="_blank">Foundation</a>.</li>
+							<li>A feature rich component library, however&hellip;</li>
+							<li>A panacea for all UI builds. Scally doesn't try to be all things to all men, it does one job and one job well, then gets out of your way.</li>
+						</ul>
+
+						<aside class="notes">
+							<ul>
+								<li>Personally I think frameworks have gone too far. Look at Bootstrap, it's not a framework, it's a theme off the shelf. Most frameworks usually do so much more than you actually need, are too bloated and way too prescriptive and opinionated. They can be good for prototyping but most project UI's are unique so you want something that leaves the theming (cosmetics) to you.</li>
+								<li>Scally provides all the building blocks you need and leaves all the theming to you i.e. it doesn't get in your way.</li>
+								<li>We can develop a Campaign Monitor version of Scally that sits above Scally and includes all of CM's styles, this is how we tackled it at Westfield.</li>
+							</ol>
+						</aside>
 					</section>
 				</section>
+				<!-- //SLIDE 4 -->
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
 
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
 
+
+				<!-- SLIDE 5 -->
 				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+					<section>
+						<h1>Why use it?</h1>
+					</section>
 
-    var nodes = document.querySelectorAll( selector );
+					<section>
+						<h2>The problems with CSS</h2>
+						<ul>
+							<li>It's old, really old.</li>
+							<li>It operates in a global namespace.</li>
+							<li>It's very, very loose.</li>
+							<li>Source order is critical.</li>
+							<li>Specificity negates all of the above.</li>
+						</ul>
 
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
+						<aside class="notes">
+							<ul>
+								<li>CSS started out styling the simplest of HTML documents. It's catching up with some impressive additions however it still lacks a lot.</li>
+								<li>CSS is leaky as fuck! Things can get bloated and very non-DRY very quick.</li>
+								<li>Forced to write CSS differently when it comes to following OOCSS principles, specificity needs to be as flat as possible.</li>
+							</ul>
+						</aside>
+					</section>
 
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+					<section>
+						<p class="u-text-size-large">Writing CSS is easy, architecting it isn’t.</p>
+					</section>
+
+					<section>
+						<img src="lib/img/gandalf.png" alt="">
+					</section>
+
+					<section>
+						<p>Scally, combined with Sass, works to solve these problems and more, by&hellip;</p>
+						<ul>
+							<li>Providing a solid architecture. You should never have to wonder where something lives as everything has it's place.</li>
+							<li>Being unopinionated and highly configurable.</li>
+							<li>Being performant (light-weight).</li>
+							<li>Enabling rapid and maintainable UI development.</li>
+							<li>Ensuring consistent UI's.</li>
+						</ul>
+					</section>
 				</section>
+				<!-- //SLIDE 5 -->
 
+
+
+
+				<!-- SLIDE 6 -->
 				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
+					<h1>How to use it</h1>
 				</section>
+				<!-- //SLIDE 6 -->
 
+
+
+				<!-- SLIDE 7 -->
 				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
 
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							<tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							<tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							<tr>
-						</tbody>
-					</table>
-				</section>
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
 				</section>
+				<!-- //SLIDE 7 -->
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
 
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
-
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
 
 			</div>
 
@@ -401,6 +283,7 @@ Reveal.addEventListener( 'customevent', function() {
 				history: true,
 				center: true,
 
+				// Tranisition type
 				transition: 'concave', // none/fade/slide/convex/concave/zoom
 
 				// Transition speed
@@ -414,9 +297,11 @@ Reveal.addEventListener( 'customevent', function() {
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
+					{ src: 'plugin/prism/prism.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'socket.io/socket.io.js', async: true },
+        	{ src: 'plugin/notes-server/client.js', async: true }
 				]
 			});
 

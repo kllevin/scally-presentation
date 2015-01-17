@@ -11,11 +11,11 @@
 // ---------------------------------------------
 
 
-// Include theme-specific fonts
-@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
-@import url(../../lib/font/league-gothic/league-gothic.css);
 
 
+/**
+ *
+ */
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: white;
 
@@ -23,34 +23,31 @@ $mainColor: #222;
 $headingColor: #222;
 
 $mainFontSize: 30px;
-$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$mainFont: Ubuntu, Helvetica, sans-serif;
+$headingFont: Ubuntu, Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: none;
-$headingFontWeight: 600;
-$linkColor: #2a76dd;
-$linkColorHover: lighten( $linkColor, 15% );
-$selectionBackgroundColor: lighten( $linkColor, 25% );
+$headingFontWeight: 100;
+$linkColor: #bf2f44;
+$linkColorHover: lighten($linkColor, 15%);
+$selectionBackgroundColor: lighten($linkColor, 25%);
 
 $heading1Size: 2em;
-$heading2Size: 1.6em;
+$heading2Size: 1.5em;
 $heading3Size: 1.3em;
-$heading4Size: 1.0em;
-
-section.has-dark-background {
-	&, h1, h2, h3, h4, h5, h6 {
-		color: #fff;
-	}
-}
+$heading4Size: 1em;
 
 
 /**
  * Settings.
  */
 
+// Colours
+$colour-controls: #333;
+
 // Gradients
-$colour-gradient-tropical: linear-gradient(-90deg, #f9ac0a 0%, #fd536f 50%, #bf2f44 100%);
+$colour-tropical-gradient: linear-gradient(-90deg, #f9ac0a 0%, #fd536f 50%, #bf2f44 100%);
 
 
 // Theme template ------------------------------
@@ -58,19 +55,144 @@ $colour-gradient-tropical: linear-gradient(-90deg, #f9ac0a 0%, #fd536f 50%, #bf2
 // ---------------------------------------------
 
 
+
 /**
- * Global styles.
+ * Resets and overrides from `template/theme.scss`.
  */
 
-body::before {
-  content: "";
-  background-image: $colour-gradient-tropical;
-  height: 5px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
+.reveal {
+  font-weight: 300;
+
+
+  /**
+   * Headings.
+   */
+
+  h2 {margin-bottom: $blockMargin*2.5;}
+
+
+  /**
+   * Code.
+   */
+
+  pre[class*="language-"] {
+    padding: $blockMargin !important;
+    max-height: 212px;
+    // If Twilight theme
+    border: 0 !important;
+    box-shadow: none !important;
+
+    code[class*="language-"] {display: block !important;}
+  }
+
+  code {font-size: 0.7em !important;}
+
+
+  /**
+   * Images.
+   */
+
+  section img {
+    margin: 0;
+    background: none;
+    border: 0;
+    box-shadow: none;
+  }
+
+
+  /**
+   * Blockquotes.
+   */
+
+  blockquote {
+    color: #666;
+    font-style: italic;
+    font-weight: 100;
+    text-align: left;
+    margin-bottom: $blockMargin;
+  }
+
+  cite {
+    display: block;
+    text-align: left;
+
+    &:before {content: "\2014";}
+  }
+
+
+  /**
+   * Lists.
+   */
+
+  ol,
+  dl,
+  ul {
+    display: block;
+    margin-left: 0;
+  }
+
+
+  /**
+   * Misc.
+   */
+
+  strong,
+  b {font-weight: 700;}
+
+  em {font-style: italic;}
+
+
+  /**
+   * Controls.
+   */
+
+  .controls {
+    div {opacity: 0.3 !important;}
+    div.enabled {opacity: 1 !important;}
+
+    // Left
+    div.navigate-left,
+    div.navigate-left.enabled {border-right-color: $colour-controls;}
+
+    div.navigate-left.enabled:hover,
+    div.navigate-left.enabled:focus {border-right-color: lighten($colour-controls, 10%);}
+
+    // Right
+    div.navigate-right,
+    div.navigate-right.enabled {border-left-color: $colour-controls;}
+
+    div.navigate-right.enabled:hover,
+    div.navigate-right.enabled:focus {border-left-color: lighten($colour-controls, 10%);}
+
+    // Down
+    div.navigate-down,
+    div.navigate-down.enabled {border-top-color: $colour-controls;}
+
+    div.navigate-down.enabled:hover,
+    div.navigate-down.enabled:focus {border-top-color: lighten($colour-controls, 10%);}
+
+    // Up
+    div.navigate-up,
+    div.navigate-up.enabled {border-bottom-color: $colour-controls;}
+
+    div.navigate-up.enabled:hover,
+    div.navigate-up.enabled:focus {border-bottom-color: lighten($colour-controls, 10%);}
+  }
+
+
+  /**
+   * Progress bar.
+   */
+
+  .progress {
+    height: 8px;
+    background-image: $colour-tropical-gradient;
+
+    span {background: white;}
+  }
 }
+
+
 
 
 /**
@@ -79,18 +201,31 @@ body::before {
 
 .backgrounds  {
 
-  // Slide 1
-  .slide-1 {background-image: $colour-gradient-tropical;}
+  // Tropical
+  .tropical-gradient {background: $colour-tropical-gradient;}
+
+  // Black
+  .black-bg {background-color: #000;}
 }
+
+
 
 
 /**
- * Resets.
+ * Utilities.
  */
 
-.u-reset-img-styles {
-  margin: 0 !important;
-  background: none !important;
-  border: 0 !important;
-  box-shadow: none !important;
-}
+.u-text-size-small {font-size: 0.75em !important;}
+
+.u-text-size-large {font-size: 1.3em !important;}
+
+.u-text-align-center {text-align: center !important;}
+
+
+
+
+/**
+ * Code highlighting.
+ */
+
+@import url(../../lib/css/prism-twilight.css);
