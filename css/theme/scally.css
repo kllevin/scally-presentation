@@ -287,6 +287,9 @@ body {
    * Images.
    */
   /**
+   * Iframes.
+   */
+  /**
    * Blockquotes.
    */
   /**
@@ -317,6 +320,9 @@ body {
     background: none;
     border: 0;
     box-shadow: none; }
+  .reveal iframe {
+    margin-left: auto !important;
+    margin-right: auto !important; }
   .reveal blockquote {
     color: #666;
     font-style: italic;

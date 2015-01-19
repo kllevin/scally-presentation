@@ -5,6 +5,7 @@ A presentation built in: <https://github.com/hakimel/reveal.js> for the
 
 ## TODO
 
+-	Change code highlighting theme.
 - Favicon.
 - Create a sub domain for Scally.
 - Sync with DB.

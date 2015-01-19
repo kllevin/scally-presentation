@@ -54,7 +54,7 @@
 					</section>
 
 					<section>
-						<p>Scally was created as an open source CSS framework for my old employer <a href="http://westfieldlabs.com" target="_blank">Westfield Labs</a> to be used for all Westfield UI builds, and whoever else wanted to use it.</p>
+						<p>Scally was created as an open source CSS framework for my old employer <a href="http://westfieldlabs.com" target="_blank">Westfield Labs</a>.</p>
 						<p>It extended and nicely packaged up the CSS framework that I'd been developing and using over the many years working as a UI developer.</p>
 						<p>The name&hellip;</p>
 
@@ -65,7 +65,7 @@
 									<li>A year had gone by but the framework hadn't been updated so it was starting to feel neglected and lacked proper documentation.</li>
 									<li>I proposed that we needed to develop a proper CSS framework, WF agreed. I worked on it full-time for around 3 months collaborating with the rest of the team along the way and doing a shit load research.</li>
 									<li>Why roll your own? Inuit and SUIT CSS were the only 2 frameworks that came close to what I believed to be true OOCSS frameworks. Inuit was no longer being maintained and was showing it, and SUIT CSS used certain things in a way that I didn't quite agree with + it didn't use Sass.</li>
-									<li>I decided to name it Scally, which was a suggestion by my former head of engineering and friend Ian Tinsley, who like me is an Englishman, which is why it got named Scally</li>
+									<li>I decided to name it Scally, which was a suggestion by my former head of engineering and friend Ian Tinsley, who like me is an Englishman, which is why it got named Scally.</li>
 								</ul>
 						</aside>
 					</section>
@@ -91,24 +91,29 @@
 
 						<aside class="notes">
 							<ul>
-								<li>Lego&trade; is the best analogy for Scally and I will show some examples later in the presentation.</li>
+								<li>Building blocks so Lego&trade; is the best analogy for Scally and I will show some examples later in the presentation.</li>
 							</ol>
 						</aside>
 					</section>
 
 					<section>
-						<p>All HTML elements render as blocks and pretty much all UI layout can be handled by a bunch of CSS rules abstracted away into reusable modules, this is what Scally does.</p>
-						<p>It is a collection of tiny, composable, configurable, interdependent modules that you can piece together how you want to, when you want to, giving you a solid, scalable CSS architecture.</p>
+						<p>Scally is a collection of tiny, composable, configurable, interdependent modules that you can piece together how you want to, when you want to, giving you a solid, scalable CSS architecture.</p>
+
+						<aside class="notes">
+							<ul>
+								<li>All HTML elements render as blocks and pretty much all UI layout can be handled by a bunch of CSS rules abstracted away into reusable modules, this is what Scally does.</li>
+							</ul>
+						</aside>
 					</section>
 
 					<section>
 						<h2>Key features</h2>
 						<ul>
 							<li>Highly modular following <a href="http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/" target="_blank">OOCSS</a> principles.</li>
-							<li>Light weight: <strong>37kb</strong> minified, <strong>14kb</strong> minified and gzipped (<a href="#/3/6" class="u-text-size-small">see</a>).</li>
+							<li>Light weight: <strong>37kb</strong> minified, <strong>14kb</strong> minified and gzipped.</li>
 							<li>Responsive ready.</li>
 							<li>Unopinionated about design.</li>
-							<li><a href="http://sass-lang.com/" target="_blank">Sass</a> and <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/" target="_blank">BEM</a> (<a href="#/3/7" class="u-text-size-small">see</a>) based.</li>
+							<li>Uses <a href="http://sass-lang.com/" target="_blank">Sass</a> and <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/" target="_blank">BEM</a>.</li>
 						</ul>
 
 						<aside class="notes">
@@ -133,18 +138,145 @@
 							</ol>
 						</aside>
 					</section>
+				</section>
+				<!-- //SLIDE 3 -->
+
+
+
+
+				<!-- SLIDE 4 -->
+				<section>
+					<section>
+						<h1>What it's not</h1>
+					</section>
 
 					<section>
-						<h2>The driving principle</h2>
-						<blockquote>When I start a new project, I assume it will eventually be open sourced (even if it's unlikely). This mindset leads to effortless modularization. If you think about how other people outside your company might use your code, you become much less likely to bake in proprietary configuration details or tightly coupled interfaces. This, in turn, leads to cleaner, more maintainable code. Even internal code should pretend to be open source code.</blockquote>
-						<cite class="u-text-size-small"><a href="http://tom.preston-werner.com/2011/11/22/open-source-everything.html" target="_blank">Open Source (Almost) Everything</a> by Tom Preston-Werner</cite>
+						<ul>
+							<li>An all-singing all-dancing feature rich component library <em>à la</em> <a href="http://getbootstrap.com/2.3.2/" target="_blank">Twitter Bootstrap</a> or <a href="http://foundation.zurb.com/" target="_blank">Foundation</a>.</li>
+							<li>A panacea for all UI builds. Scally doesn't try to be all things to all men, it does one job and one job well, then gets out of your way.</li>
+						</ul>
 
 						<aside class="notes">
 							<ul>
-								<li>.</li>
-								<li>Forces you to scrutinise over everything you do as every bit of Scally needs to work in a way that does one thing and one thing only. The open/closed principle.</li>
+								<li>Personally I think frameworks have gone too far. Look at Bootstrap, it's not a framework, it's a theme off the shelf. Most frameworks usually do so much more than you actually need, are too bloated and way too prescriptive and opinionated. They can be good for prototyping but most project UI's are unique so you want something that leaves the theming (cosmetics) to you.</li>
+								<li>Scally provides all the building blocks you need and leaves all the theming to you i.e. it doesn't get in your way.</li>
+								<li>We can develop a Campaign Monitor version of Scally that sits above Scally and includes all of CM's styles, this is how we tackled it at Westfield.</li>
+							</ol>
+						</aside>
+					</section>
+
+					<section>
+						<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/csswizardry">@csswizardry</a> bloat/ubiquitous design, usually. I like to start with something smaller first and build upon it, which is why I made Cardinal.</p>&mdash; Chris Bracco (@cbracco) <a href="https://twitter.com/cbracco/status/444115122408415233">March 13, 2014</a></blockquote>
+						<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</section>
+
+					<section>
+						<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/csswizardry">@csswizardry</a> 1) I need to understand what the author has in mind; 2) Sites are too unique.</p>&mdash; Margus Holland (@margusholland) <a href="https://twitter.com/margusholland/status/444114912353468417">March 13, 2014</a></blockquote>
+					</section>
+
+					<section>
+						<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/csswizardry">@csswizardry</a> they&#39;re always far too opinionated, even when they&#39;re not.</p>&mdash; Martin Wright (@wrightmartin) <a href="https://twitter.com/wrightmartin/status/444115289819865088">March 13, 2014</a></blockquote>
+					</section>
+
+					<section>
+						<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/csswizardry">@csswizardry</a> Just the thought of having lots of styles that I may not use.</p>&mdash; Martin Bean (@martinbean) <a href="https://twitter.com/martinbean/status/444115706905653249">March 13, 2014</a></blockquote>
+					</section>
+
+					<section>
+						<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/csswizardry">@csswizardry</a> they usually encourage non-standard markup, have opinionated stylistic nuances, and almost all of them include the kitchen sink</p>&mdash; michael matyus (@mmatyus) <a href="https://twitter.com/mmatyus/status/444115627637506048">March 13, 2014</a></blockquote>
+					</section>
+
+					<section>
+						<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/p_maloney">@p_maloney</a> <a href="https://twitter.com/csswizardry">@csswizardry</a> agree with this. Spend most of my time overwriting CSS.</p>&mdash; Tom Leadbetter (@leads) <a href="https://twitter.com/leads/status/444115026572763136">March 13, 2014</a></blockquote>
+					</section>
+				</section>
+				<!-- //SLIDE 4 -->
+
+
+
+
+				<!-- SLIDE 5 -->
+				<section>
+					<section>
+						<h1>Why use it?</h1>
+					</section>
+
+					<section>
+						<h2>The problems with CSS</h2>
+						<ul>
+							<li>It's old, really old.</li>
+							<li>It operates in a global namespace.</li>
+							<li>It's very, very loose.</li>
+							<li>Source order is critical.</li>
+							<li>Specificity negates the above.</li>
+						</ul>
+
+						<aside class="notes">
+							<ul>
+								<li>CSS started out styling the simplest of HTML documents. It's catching up with some impressive additions however it still lacks a lot.</li>
+								<li>CSS is leaky as fuck! Things can get bloated and very non-DRY very quick.</li>
+								<li>Forced to write CSS differently when it comes to following OOCSS principles, specificity needs to be as flat as possible.</li>
 							</ul>
 						</aside>
+					</section>
+
+					<section>
+						<p class="u-text-size-large">Writing CSS is easy, architecting it isn’t.</p>
+					</section>
+
+					<section>
+						<img src="lib/img/gandalf.png" alt="">
+					</section>
+
+					<section>
+						<h2>Scally helps</h2>
+						<ul>
+							<li>By providing a solid architecture.</li>
+							<li>By being unopinionated and highly configurable.</li>
+							<li>By being performant (light-weight).</li>
+							<li>By enabling rapid UI development.</li>
+							<li>By ensuring UI's are consistent.</li>
+						</ul>
+
+						<aside class="notes">
+							<ul>
+								<li>You should never have to wonder where something lives as everything has it's place. Meaning your CSS will be highly maintainable.</li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+				<!-- //SLIDE 5 -->
+
+
+
+
+				<!-- SLIDE 6 -->
+				<section>
+					<section>
+						<h1>How to use it</h1>
+					</section>
+
+					<section>
+						<p><code class="language-css">bower install scally</code></p>
+						<p>Or download zip from GitHub repo (not recommended).</p>
+
+						<aside class="notes">
+							<ul>
+								<li>Will install scally into your app, this way you never touch the framework allowing you to grab the latest seamlessly via <code>bower update</code>.</li>
+								<li>More install options to come e.g. NPM, Ruby Gem.</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>The Structure</h2>
+						<ul>
+							<li>Core</li>
+							<li>Layout</li>
+							<li>Components</li>
+							<li>Utilities</li>
+						</ul>
+						<img src="lib/img/layout modules combined.png" alt="">
 					</section>
 
 					<section>
@@ -167,91 +299,6 @@
 						</ul>
 					</section>
 				</section>
-				<!-- //SLIDE 3 -->
-
-
-
-
-				<!-- SLIDE 4 -->
-				<section>
-					<section>
-						<h1>What it's not</h1>
-					</section>
-
-					<section>
-						<ul>
-							<li>An all-singing all-dancing UI toolkit <em>à la</em> <a href="http://getbootstrap.com/2.3.2/" target="_blank">Twitter Bootstrap</a> or <a href="http://foundation.zurb.com/" target="_blank">Foundation</a>.</li>
-							<li>A feature rich component library, however&hellip;</li>
-							<li>A panacea for all UI builds. Scally doesn't try to be all things to all men, it does one job and one job well, then gets out of your way.</li>
-						</ul>
-
-						<aside class="notes">
-							<ul>
-								<li>Personally I think frameworks have gone too far. Look at Bootstrap, it's not a framework, it's a theme off the shelf. Most frameworks usually do so much more than you actually need, are too bloated and way too prescriptive and opinionated. They can be good for prototyping but most project UI's are unique so you want something that leaves the theming (cosmetics) to you.</li>
-								<li>Scally provides all the building blocks you need and leaves all the theming to you i.e. it doesn't get in your way.</li>
-								<li>We can develop a Campaign Monitor version of Scally that sits above Scally and includes all of CM's styles, this is how we tackled it at Westfield.</li>
-							</ol>
-						</aside>
-					</section>
-				</section>
-				<!-- //SLIDE 4 -->
-
-
-
-
-				<!-- SLIDE 5 -->
-				<section>
-					<section>
-						<h1>Why use it?</h1>
-					</section>
-
-					<section>
-						<h2>The problems with CSS</h2>
-						<ul>
-							<li>It's old, really old.</li>
-							<li>It operates in a global namespace.</li>
-							<li>It's very, very loose.</li>
-							<li>Source order is critical.</li>
-							<li>Specificity negates all of the above.</li>
-						</ul>
-
-						<aside class="notes">
-							<ul>
-								<li>CSS started out styling the simplest of HTML documents. It's catching up with some impressive additions however it still lacks a lot.</li>
-								<li>CSS is leaky as fuck! Things can get bloated and very non-DRY very quick.</li>
-								<li>Forced to write CSS differently when it comes to following OOCSS principles, specificity needs to be as flat as possible.</li>
-							</ul>
-						</aside>
-					</section>
-
-					<section>
-						<p class="u-text-size-large">Writing CSS is easy, architecting it isn’t.</p>
-					</section>
-
-					<section>
-						<img src="lib/img/gandalf.png" alt="">
-					</section>
-
-					<section>
-						<p>Scally, combined with Sass, works to solve these problems and more, by&hellip;</p>
-						<ul>
-							<li>Providing a solid architecture. You should never have to wonder where something lives as everything has it's place.</li>
-							<li>Being unopinionated and highly configurable.</li>
-							<li>Being performant (light-weight).</li>
-							<li>Enabling rapid and maintainable UI development.</li>
-							<li>Ensuring consistent UI's.</li>
-						</ul>
-					</section>
-				</section>
-				<!-- //SLIDE 5 -->
-
-
-
-
-				<!-- SLIDE 6 -->
-				<section>
-					<h1>How to use it</h1>
-				</section>
 				<!-- //SLIDE 6 -->
 
 
@@ -259,7 +306,18 @@
 				<!-- SLIDE 7 -->
 				<section>
 
+					<section>
+						<h2>The driving principle</h2>
+						<blockquote>When I start a new project, I assume it will eventually be open sourced (even if it's unlikely). This mindset leads to effortless modularization. If you think about how other people outside your company might use your code, you become much less likely to bake in proprietary configuration details or tightly coupled interfaces. This, in turn, leads to cleaner, more maintainable code. Even internal code should pretend to be open source code.</blockquote>
+						<cite class="u-text-size-small"><a href="http://tom.preston-werner.com/2011/11/22/open-source-everything.html" target="_blank">Open Source (Almost) Everything</a> by Tom Preston-Werner</cite>
 
+						<aside class="notes">
+							<ul>
+								<li>.</li>
+								<li>Forces you to scrutinise over everything you do as every bit of Scally needs to work in a way that does one thing and one thing only. The open/closed principle.</li>
+							</ul>
+						</aside>
+					</section>
 				</section>
 				<!-- //SLIDE 7 -->
 
