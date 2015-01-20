@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1305px" height="419px" viewBox="0 0 1305 419" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Stacked concept</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0.25781251%" y1="49.7500002%" x2="101.257813%" y2="49.7500002%" id="linearGradient-1">
+            <stop stop-color="#BF2E44" offset="0%"></stop>
+            <stop stop-color="#FE536E" offset="47.5247532%"></stop>
+            <stop stop-color="#FAAD0A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Stacked-concept" sketch:type="MSLayerGroup" fill="url(#linearGradient-1)">
+            <path d="M1153.27662,55.8334007 L1265.67162,188.752775 L112.824691,418.166606 L0.4296875,201.615513 L1153.27662,55.8334007 Z" id="Rectangle-20" sketch:type="MSShapeGroup"></path>
+            <path d="M1167.32446,36.6056925 L1279.71946,169.525067 L126.872529,398.938897 L14.4775254,182.387805 L1167.32446,36.6056925 Z" id="Rectangle-21" stroke="#FFFFFF" fill-opacity="0.8" sketch:type="MSShapeGroup"></path>
+            <path d="M1180.43577,19.4127576 L1292.83078,152.332132 L139.983844,381.745962 L27.5888408,165.19487 L1180.43577,19.4127576 Z" id="Rectangle-22" stroke="#FFFFFF" fill-opacity="0.6" sketch:type="MSShapeGroup"></path>
+            <path d="M1191.87062,0.71875 L1304.26562,133.638125 L151.418691,363.051955 L39.0236883,146.500863 L1191.87062,0.71875 Z" id="Rectangle-23" stroke="#FFFFFF" fill-opacity="0.4" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

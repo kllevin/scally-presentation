@@ -30,12 +30,12 @@ $headingLetterSpacing: normal;
 $headingTextTransform: none;
 $headingFontWeight: 100;
 $linkColor: #bf2f44;
-$linkColorHover: lighten($linkColor, 15%);
+$linkColorHover: darken($linkColor, 10%);
 $selectionBackgroundColor: lighten($linkColor, 25%);
 
 $heading1Size: 2em;
 $heading2Size: 1.5em;
-$heading3Size: 1.3em;
+$heading3Size: 1em;
 $heading4Size: 1em;
 
 
@@ -56,6 +56,7 @@ $colour-tropical-gradient: linear-gradient(-90deg, #f9ac0a 0%, #fd536f 50%, #bf2
 
 
 
+
 /**
  * Resets and overrides from `template/theme.scss`.
  */
@@ -65,10 +66,37 @@ $colour-tropical-gradient: linear-gradient(-90deg, #f9ac0a 0%, #fd536f 50%, #bf2
 
 
   /**
+   * Set line heights.
+   */
+
+  p,
+  ul,
+  ol,
+  blockquote {line-height: 1.45;}
+
+
+  /**
+   * Links.
+   */
+
+  a:hover,
+  a:focus {text-decoration: none;}
+
+
+  /**
    * Headings.
    */
 
   h2 {margin-bottom: $blockMargin*2.5;}
+
+  h3 {font-weight: 700;}
+
+
+  /**
+   * Paragraphs.
+   */
+
+  p {margin: 40px 0;}
 
 
   /**
@@ -77,15 +105,23 @@ $colour-tropical-gradient: linear-gradient(-90deg, #f9ac0a 0%, #fd536f 50%, #bf2
 
   pre[class*="language-"] {
     padding: $blockMargin !important;
-    max-height: 212px;
+    max-height: 400px;
+    margin-bottom: 40px !important;
     // If Twilight theme
     border: 0 !important;
     box-shadow: none !important;
+
+    &:last-child {margin-bottom: 0 !important;}
 
     code[class*="language-"] {display: block !important;}
   }
 
   code {font-size: 0.7em !important;}
+
+  .code-large {
+    padding: 10px;
+    font-size: 1em !important;
+  }
 
 
   /**
@@ -96,6 +132,12 @@ $colour-tropical-gradient: linear-gradient(-90deg, #f9ac0a 0%, #fd536f 50%, #bf2
     margin: 0;
     background: none;
     border: 0;
+    box-shadow: none;
+  }
+
+  a:hover img,
+  a:focus img {
+    background: none;
     box-shadow: none;
   }
 
@@ -120,6 +162,14 @@ $colour-tropical-gradient: linear-gradient(-90deg, #f9ac0a 0%, #fd536f 50%, #bf2
     font-weight: 100;
     text-align: left;
     margin-bottom: $blockMargin;
+    border-left: 2px solid $linkColor;
+    padding: 5px 0 5px 20px;
+
+    iframe & {
+      border: 0 !important;
+      margin-bottom: 0 !important;
+      padding: 0 !important;
+    }
   }
 
   cite {
@@ -200,6 +250,31 @@ $colour-tropical-gradient: linear-gradient(-90deg, #f9ac0a 0%, #fd536f 50%, #bf2
 
     span {background: white;}
   }
+
+
+  /**
+   * Backgrounds.
+   */
+
+  .tropical-gradient {
+    *,
+    a:hover,
+    a:focus {color: white;}
+
+    a {transition: opacity 0.2s;}
+
+    a:hover,
+    a:focus {opacity: 0.7;}
+  }
+
+
+    /**
+     * Demo blocks.
+     */
+
+    .demo-block {border: 1px solid $linkColor;}
+
+    .demo-block-bg {background: #eee;}
 }
 
 
@@ -231,11 +306,39 @@ $colour-tropical-gradient: linear-gradient(-90deg, #f9ac0a 0%, #fd536f 50%, #bf2
 
 .u-text-align-center {text-align: center !important;}
 
+.u-text-align-left {text-align: left !important;}
 
+.u-text-align-right {text-align: right !important;}
 
+.u-s-m-none {margin: 0 !important;}
 
-/**
- * Code highlighting.
- */
+.u-s-mb-none {margin-bottom: 0 !important;}
 
-@import url(../../lib/css/prism-twilight.css);
+.u-s-mt-none {margin-top: 0 !important;}
+
+.u-s-mb-20 {margin-bottom: 20px !important;}
+
+.u-s-mb-40 {margin-bottom: 40px !important;}
+
+.u-s-mb-100 {margin-bottom: 100px !important;}
+
+.u-list-plain {
+  margin: 0 !important;
+  list-style: none !important;
+}
+
+.u-list-padding > li {margin-bottom: 5px !important;}
+
+.u-text-mono {
+  font-family: Consolas, Monaco, 'Andale Mono', monospace !important;
+  font-size: 0.75em !important;
+  color: #666;
+
+  code {font-size: 100% !important;}
+}
+
+.u-narrow-container {
+  max-width: 900px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}

@@ -1,0 +1,24 @@
+/* ============================================================================
+   @CORE -> BASE -> LINKS
+   ========================================================================= */
+
+
+/**
+ * Settings.
+ */
+
+$link-colour:         $colour-brand !default;
+
+$link-colour-hover:   darken($link-colour, 10%) !default;
+
+
+a {
+  color: $link-colour;
+  text-decoration: none;
+
+  &:hover,
+	&:focus {
+    color: $link-colour-hover;
+    text-decoration: underline;
+	}
+}

@@ -17,6 +17,8 @@
 		<link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic,700italic" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/scally.css" id="theme">
+		<link rel="stylesheet" href="/bower_components/scally/style.css">
+		<link rel="stylesheet" href="lib/css/prism-okiadia.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -26,6 +28,9 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+		<!-- Twitter API -->
+		<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 	</head>
 
 	<body>
@@ -40,7 +45,7 @@
 
 				<!-- SLIDE 1 -->
 				<section class="tropical-gradient">
-					<img src="lib/img/logo.svg" width="250" alt="Scally CSS framework">
+					<img src="lib/img/logo.svg" width="290" alt="Scally CSS framework">
 				</section>
 				<!-- //SLIDE 1 -->
 
@@ -54,9 +59,11 @@
 					</section>
 
 					<section>
-						<p>Scally was created as an open source CSS framework for my old employer <a href="http://westfieldlabs.com" target="_blank">Westfield Labs</a>.</p>
-						<p>It extended and nicely packaged up the CSS framework that I'd been developing and using over the many years working as a UI developer.</p>
-						<p>The name&hellip;</p>
+						<div class="u-narrow-container u-text-align-left">
+							<p>Scally was created as an open source CSS framework for my old employer <a href="http://westfieldlabs.com" target="_blank">Westfield Labs</a>.</p>
+							<p>It extended and nicely packaged up the CSS framework that I'd been developing and using over the many years working as a UI developer.</p>
+							<p>The name&hellip;</p>
+						</div>
 
 						<aside class="notes">
 								<ul>
@@ -71,7 +78,7 @@
 					</section>
 
 					<section>
-						<img src="lib/img/scally-1.jpg" class="stretch" alt="A scouser">
+						<img src="lib/img/a-scally.jpg" class="stretch" alt="A scouser">
 					</section>
 				</section>
 				<!-- //SLIDE 2 -->
@@ -86,18 +93,20 @@
 					</section>
 
 					<section>
-						<img src="lib/img/lego-1.png" width="600" alt="Some lego&trade; pieces">
-						<p>Bits and pieces to construct UI.</p>
+						<img src="lib/img/lego.png" width="600" alt="Some lego&trade; pieces">
+						<p class="u-s-mb-none u-text-size-large">Bits and pieces to construct UI.</p>
 
 						<aside class="notes">
 							<ul>
 								<li>Building blocks so Lego&trade; is the best analogy for Scally and I will show some examples later in the presentation.</li>
-							</ol>
+							</ul>
 						</aside>
 					</section>
 
 					<section>
-						<p>Scally is a collection of tiny, composable, configurable, interdependent modules that you can piece together how you want to, when you want to, giving you a solid, scalable CSS architecture.</p>
+						<div class="u-narrow-container u-text-align-left">
+							<p class="u-s-mb-none">Scally is a collection of tiny, composable, configurable, interdependent modules that you can piece together how you want to, when you want to, giving you a solid, scalable CSS architecture.</p>
+						</div>
 
 						<aside class="notes">
 							<ul>
@@ -108,13 +117,15 @@
 
 					<section>
 						<h2>Key features</h2>
-						<ul>
-							<li>Highly modular following <a href="http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/" target="_blank">OOCSS</a> principles.</li>
-							<li>Light weight: <strong>37kb</strong> minified, <strong>14kb</strong> minified and gzipped.</li>
-							<li>Responsive ready.</li>
-							<li>Unopinionated about design.</li>
-							<li>Uses <a href="http://sass-lang.com/" target="_blank">Sass</a> and <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/" target="_blank">BEM</a>.</li>
-						</ul>
+						<div class="u-narrow-container u-text-align-left">
+							<ul class="u-s-mb-none">
+								<li>Highly modular following <a href="http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/" target="_blank">OOCSS</a> principles.</li>
+								<li>Light weight: <strong>37kb</strong> minified, <strong>14kb</strong> minified and gzipped.</li>
+								<li>Responsive ready.</li>
+								<li>Unopinionated about design.</li>
+								<li>Uses <a href="http://sass-lang.com/" target="_blank">Sass</a> and <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/" target="_blank">BEM</a>.</li>
+							</ul>
+						</div>
 
 						<aside class="notes">
 							<ul>
@@ -135,7 +146,7 @@
 								<li>Is responsive ready making building responsive UI's easy. They're no absolute units used in Scally e.g. <code>px</code>, everything is fluid. Scally lets you change UI at breakpoints e.g. a grid can be 6 columns at super wide viewports, 3 columns at medium width viewports, and zero columns and small width viewports like handheld devices. However Scally doesn't force you to go responsive, you can easily create fixed width UI's with Scally.</li>
 								<li>Scally doesn't come with any design and everything is configurable. This approach means Scally acts as a solid foundation to your UI allowing you to layer on the cosmetic styles of the UI on top.</li>
 								<li>BEM is a front-end naming methodology. It is a smart way of naming your CSS classes to give them more transparency and meaning to other developers.</li>
-							</ol>
+							</ul>
 						</aside>
 					</section>
 				</section>
@@ -151,44 +162,137 @@
 					</section>
 
 					<section>
-						<ul>
-							<li>An all-singing all-dancing feature rich component library <em>à la</em> <a href="http://getbootstrap.com/2.3.2/" target="_blank">Twitter Bootstrap</a> or <a href="http://foundation.zurb.com/" target="_blank">Foundation</a>.</li>
-							<li>A panacea for all UI builds. Scally doesn't try to be all things to all men, it does one job and one job well, then gets out of your way.</li>
-						</ul>
+						<div class="u-narrow-container u-text-align-left">
+							<p>An all-singing all-dancing UI Toolkit <em>à la</em> <a href="http://getbootstrap.com/2.3.2/" target="_blank">Twitter Bootstrap</a> or <a href="http://foundation.zurb.com/" target="_blank">Foundation</a>. Scally doesn't try to be all things to all men, it does one job and one job well, then gets out of your way.</p>
+						</div>
+					</section>
+
+					<section>
+						<h2 class="u-s-mb-40">CSS Frameworks</h2>
+						<div class="l-grid l-grid--gutter-huge l-grid--align-middle u-s-mb-100">
+							<div class="l-grid__item u-one-third">
+								<a href="https://github.com/chris-pearce/scally" target="_blank">
+									<img src="lib/img/logo-rainbow.svg" alt="Scally logo">
+								</a>
+							</div>
+							<div class="l-grid__item u-one-third">
+								<a href="https://github.com/inuitcss" target="_blank">
+									<img src="lib/img/logos/inuit.png" alt="Inuit logo">
+								</a>
+							</div>
+							<div class="l-grid__item u-one-third">
+								<a href="http://suitcss.github.io/" target="_blank">
+									<img src="lib/img/logos/suit.svg" alt="SUIT CSS logo">
+								</a>
+							</div>
+						</div>
+
+						<h2 class="u-s-mb-40">UI Toolkits</h2>
+						<div class="l-grid l-grid--gutter-huge l-grid--align-middle">
+							<div class="l-grid__item u-one-half u-text-align-center">
+								<a href="http://getbootstrap.com/2.3.2/" target="_blank">
+									<img src="lib/img/logos/bootstrap.svg" width="160" alt="Twitter Bootstrap logo">
+								</a>
+							</div>
+							<div class="l-grid__item u-one-half u-text-align-center">
+								<a href="http://foundation.zurb.com/" target="_blank">
+									<img src="lib/img/logos/foundation.svg" width="360" alt="Zurb Foundation logo">
+								</a>
+							</div>
+						</div>
 
 						<aside class="notes">
 							<ul>
-								<li>Personally I think frameworks have gone too far. Look at Bootstrap, it's not a framework, it's a theme off the shelf. Most frameworks usually do so much more than you actually need, are too bloated and way too prescriptive and opinionated. They can be good for prototyping but most project UI's are unique so you want something that leaves the theming (cosmetics) to you.</li>
-								<li>Scally provides all the building blocks you need and leaves all the theming to you i.e. it doesn't get in your way.</li>
+								<li>Most UI toolkits usually do so much more than you actually need, are too bloated and way too prescriptive and opinionated. They can be good for prototyping but most project UI's are unique so you want something that leaves the theming (cosmetics) to you.</li>
+								<li>UI Toolkits like Foundation don't provide helpers/utilities, basically they don't follow OOCSS principles very well meaning it can end up just getting in the way.</li>
+								<li>Scally only takes up a small portion of your CSS by only providing the building blocks you need then leaves all the theming to you i.e. it doesn't get in your way.</li>
 								<li>We can develop a Campaign Monitor version of Scally that sits above Scally and includes all of CM's styles, this is how we tackled it at Westfield.</li>
-							</ol>
+							</ul>
 						</aside>
 					</section>
 
 					<section>
-						<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/csswizardry">@csswizardry</a> bloat/ubiquitous design, usually. I like to start with something smaller first and build upon it, which is why I made Cardinal.</p>&mdash; Chris Bracco (@cbracco) <a href="https://twitter.com/cbracco/status/444115122408415233">March 13, 2014</a></blockquote>
-						<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+						<div class="l-grid l-grid--gutter-huge l-grid--align-middle">
+							<div class="l-grid__item u-one-third">
+								<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/csswizardry">@csswizardry</a> Maybe frameworks have gone too far. Look at Bootstrap, it&#39;s not a framework, it&#39;s a theme off the shelf.</p>&mdash; Allan Moreno (@heyallanmoreno) <a href="https://twitter.com/heyallanmoreno/status/444149012477005824">March 13, 2014</a></blockquote>
+							</div>
+							<div class="l-grid__item u-one-third">
+								<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/csswizardry">@csswizardry</a> bloat/ubiquitous design, usually. I like to start with something smaller first and build upon it, which is why I made Cardinal.</p>&mdash; Chris Bracco (@cbracco) <a href="https://twitter.com/cbracco/status/444115122408415233">March 13, 2014</a></blockquote>
+							</div>
+							<div class="l-grid__item u-one-third">
+								<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/csswizardry">@csswizardry</a> 1) I need to understand what the author has in mind; 2) Sites are too unique.</p>&mdash; Margus Holland (@margusholland) <a href="https://twitter.com/margusholland/status/444114912353468417">March 13, 2014</a></blockquote>
+							</div>
+						</div>
 					</section>
 
 					<section>
-						<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/csswizardry">@csswizardry</a> 1) I need to understand what the author has in mind; 2) Sites are too unique.</p>&mdash; Margus Holland (@margusholland) <a href="https://twitter.com/margusholland/status/444114912353468417">March 13, 2014</a></blockquote>
+						<div class="l-grid l-grid--gutter-huge l-grid--align-middle">
+							<div class="l-grid__item u-one-third">
+								<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/csswizardry">@csswizardry</a> Not built in a way that matches the designs I&#39;m working to, not worth the hassle of unpicking someone elses decisions</p>&mdash; Mark Skinner (@MarkSkinner_) <a href="https://twitter.com/MarkSkinner_/status/444117278465208320">March 13, 2014</a></blockquote>
+							</div>
+							<div class="l-grid__item u-one-third">
+								<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/csswizardry">@csswizardry</a> I think it’s because designing a framework under one set of conditions is hard enough; designing for all is impossible.</p>&mdash; Robin Rendle (@robinrendle) <a href="https://twitter.com/robinrendle/status/444117152048898048">March 13, 2014</a></blockquote>
+							</div>
+							<div class="l-grid__item u-one-third">
+								<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/csswizardry">@csswizardry</a> most projects are unique</p>&mdash; Matĳs Brinkhuis (@matijs) <a href="https://twitter.com/matijs/status/444114327948500992">March 13, 2014</a></blockquote>
+							</div>
+						</div>
 					</section>
 
 					<section>
-						<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/csswizardry">@csswizardry</a> they&#39;re always far too opinionated, even when they&#39;re not.</p>&mdash; Martin Wright (@wrightmartin) <a href="https://twitter.com/wrightmartin/status/444115289819865088">March 13, 2014</a></blockquote>
+						<div class="l-grid l-grid--gutter-huge l-grid--align-middle">
+							<div class="l-grid__item u-one-third">
+								<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/csswizardry">@csswizardry</a> they&#39;re always far too opinionated, even when they&#39;re not.</p>&mdash; Martin Wright (@wrightmartin) <a href="https://twitter.com/wrightmartin/status/444115289819865088">March 13, 2014</a></blockquote>
+							</div>
+							<div class="l-grid__item u-one-third">
+								<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/csswizardry">@csswizardry</a> Usually they do so much more than I actually need and there’s a lot of overhead of extra/un-needed code.</p>&mdash; Val Head (@vlh) <a href="https://twitter.com/vlh/status/444114908377272320">March 13, 2014</a></blockquote>
+							</div>
+							<div class="l-grid__item u-one-third">
+								<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/csswizardry">@csswizardry</a> Just the thought of having lots of styles that I may not use.</p>&mdash; Martin Bean (@martinbean) <a href="https://twitter.com/martinbean/status/444115706905653249">March 13, 2014</a></blockquote>
+							</div>
+						</div>
+					</section>
+
+					<!-- <section>
+						<h2 class="u-s-mb-none">Thoughts on Foundation</h2>
+						<p>From my old team</p>
 					</section>
 
 					<section>
-						<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/csswizardry">@csswizardry</a> Just the thought of having lots of styles that I may not use.</p>&mdash; Martin Bean (@martinbean) <a href="https://twitter.com/martinbean/status/444115706905653249">March 13, 2014</a></blockquote>
+						<div class="u-narrow-container u-text-align-left">
+							<blockquote class="u-s-mb-none">It isn't a true framework, it focuses on components, it doesn't provide helpers, if you want them you need to dig through the code, find the related mixins and write them yourself (or as I do, rip them out of scally and ignore foundation altogether)</blockquote>
+						</div>
 					</section>
 
 					<section>
-						<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/csswizardry">@csswizardry</a> they usually encourage non-standard markup, have opinionated stylistic nuances, and almost all of them include the kitchen sink</p>&mdash; michael matyus (@mmatyus) <a href="https://twitter.com/mmatyus/status/444115627637506048">March 13, 2014</a></blockquote>
+						<div class="u-narrow-container u-text-align-left">
+							<blockquote class="u-s-mb-none">Foundation doesn't have a strong naming convention, it isn't using anything like BEM, or even being very strict with an OOCSS naming style.</blockquote>
+						</div>
 					</section>
 
 					<section>
-						<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/p_maloney">@p_maloney</a> <a href="https://twitter.com/csswizardry">@csswizardry</a> agree with this. Spend most of my time overwriting CSS.</p>&mdash; Tom Leadbetter (@leads) <a href="https://twitter.com/leads/status/444115026572763136">March 13, 2014</a></blockquote>
+						<div class="u-narrow-container u-text-align-left">
+							<blockquote class="u-s-mb-none">The grid tightly couples the idea of a page container, and a grid row. This causes some funky alignment issues out of the box.</blockquote>
+						</div>
 					</section>
+
+					<section>
+						<div class="u-narrow-container u-text-align-left">
+							<blockquote class="u-s-mb-none">Design opinionated!! You end up wasting time undoing their design in order to achieve your own, sometimes it's simply a matter of resetting a variable, sometimes it isn't.</blockquote>
+						</div>
+					</section>
+
+					<section>
+						<div class="u-narrow-container u-text-align-left">
+							<blockquote class="u-s-mb-none">Elements are styled directly, i.e. table. There are about twenty variables you can set to style a table, but they are all attached directly to the table element, so you can't just have simply a table! And now you are stuck trying to override all this unnecessary stuff&hellip;and if we ever wanted two different types of table styling&hellip;I don't even want to think about it :)</blockquote>
+						</div>
+					</section>
+
+					<section>
+						<div class="u-narrow-container u-text-align-left">
+							<blockquote class="u-s-mb-none">It is not a lightweight framework, you end up including more of it than you necessarily need, and it isn't that easy to get up and running. The documentation looks good at first glance, but it never goes deep enough, I end up spending a lot of time sifting through the code to find out what is there, in an effort to utilize the framework instead of writing my own bespoke code, however there are times when I lose patience and just write my own&hellip;sort of defeats the purpose of the framework. It gets in my way a whole lot more than I would like.</blockquote>
+						</div>
+					</section> -->
 				</section>
 				<!-- //SLIDE 4 -->
 
@@ -203,13 +307,15 @@
 
 					<section>
 						<h2>The problems with CSS</h2>
-						<ul>
-							<li>It's old, really old.</li>
-							<li>It operates in a global namespace.</li>
-							<li>It's very, very loose.</li>
-							<li>Source order is critical.</li>
-							<li>Specificity negates the above.</li>
-						</ul>
+						<div class="u-narrow-container u-text-align-left">
+							<ul class="u-s-mb-none">
+								<li>It's old, really old.</li>
+								<li>It operates in a global namespace.</li>
+								<li>It's very, very loose.</li>
+								<li>Source order is critical.</li>
+								<li>Specificity negates the above.</li>
+							</ul>
+						</div>
 
 						<aside class="notes">
 							<ul>
@@ -221,22 +327,27 @@
 					</section>
 
 					<section>
-						<p class="u-text-size-large">Writing CSS is easy, architecting it isn’t.</p>
+						<div class="u-narrow-container">
+							<p class="u-text-size-large">Writing CSS is easy, architecting it isn’t.</p>
+						</div>
 					</section>
 
 					<section>
-						<img src="lib/img/gandalf.png" alt="">
+						<img src="lib/img/gandalf.png" alt="How did all this magic get into CSS?">
 					</section>
 
 					<section>
-						<h2>Scally helps</h2>
-						<ul>
-							<li>By providing a solid architecture.</li>
-							<li>By being unopinionated and highly configurable.</li>
-							<li>By being performant (light-weight).</li>
-							<li>By enabling rapid UI development.</li>
-							<li>By ensuring UI's are consistent.</li>
-						</ul>
+						<h2>What Scally is good at</h2>
+						<div class="u-narrow-container u-text-align-left">
+							<p class="u-text-align-center"><strong>DRYness</strong> / <strong>Abstraction</strong> / <strong>Efficiency</strong></p>
+							<ul>
+								<li>Providing a solid CSS architecture.</li>
+								<li>Being unopinionated and highly configurable.</li>
+								<li>Being performant (light-weight).</li>
+								<li>Enabling rapid UI development.</li>
+								<li>Ensuring UI's are consistent.</li>
+							</ul>
+						</div>
 
 						<aside class="notes">
 							<ul>
@@ -253,12 +364,23 @@
 				<!-- SLIDE 6 -->
 				<section>
 					<section>
-						<h1>How to use it</h1>
+						<h1>Overview</h1>
+						<p><em>(Very brief)</em></p>
 					</section>
 
 					<section>
-						<p><code class="language-css">bower install scally</code></p>
-						<p>Or download zip from GitHub repo (not recommended).</p>
+						<h2>Install</h2>
+						<div class="u-narrow-container">
+							<p class="u-s-mb-40"><code class="language- code-large">bower install scally</code></p>
+<pre class="u-s-mb-40"><code class="language-css">app
+│
+└───assets
+│
+└───bower_components
+    │
+    └───scally</code></pre>
+							<p class="u-text-size-small"><em>Or download zip from GitHub repo.</em></p>
+						</div>
 
 						<aside class="notes">
 							<ul>
@@ -270,56 +392,1092 @@
 
 					<section>
 						<h2>The Structure</h2>
-						<ul>
-							<li>Core</li>
-							<li>Layout</li>
-							<li>Components</li>
-							<li>Utilities</li>
-						</ul>
-						<img src="lib/img/layout modules combined.png" alt="">
+						<div class="u-text-align-center u-s-mb-40">
+							<p><strong>Core</strong> / <strong>Layout</strong> / <strong>Components</strong> / <strong>Utilities</strong></p>
+						</div>
+						<img src="lib/img/the-structure.svg" alt="Scally's sctructure">
+
+						<aside class="notes">
+							<ul>
+								<li>Each section acts as a layer building on top of each other.</li>
+								<li>Core is the foundation of a project's UI providing things like: sensible global styles, global settings (Sass vars), Sass functions and mixins, a reset. Core is the only mandatory section.</li>
+								<li>Layout are the main bits of Lego®, they take care of all UI layout using 3 layout modules: container, grid, and side-by-side.</li>
+								<li>Utilities are low-level. They have a very narrow scope and may end up being used frequently, due to their separation from the semantics of the document and the theming of what they're being applied too. Think of them as helpers.</li>
+								<li>Components are the discrete custom elements of a UI that enclose specific semantics and styling, they also make up the bulk of a UI. Some examples: Pagination, Breadcrumbs, Dialog, Button, etc. Components are extremely focused implementing only a single part of a UI, so they should never try to do too much, and is why you won't find may components in Scally. They also shouldn't be concerned or have any dependencies on ancestral context i.e. where they live in a UI, making them extremely portable and robust. So each component should be designed to exist as a standalone component, think of them as black boxes.</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<div class="u-text-align-center u-s-mb-40">
+							<p class="u-s-mb-20"><strong>Campaign Monitor: </strong>Core / Components</p>
+							<p class="u-s-m-none"><strong>Scally: </strong>Core / Layout / Components / Utilities</p>
+						</div>
+						<img src="lib/img/the-structure-CM.svg" alt="Scally's and Campaign Monitor's sctructure">
+					</section>
+
+					<section>
+						<h2>The master stylesheet</h2>
+						<p class="u-s-mb-40"><code class="language- code-large">style.scss</code></p>
+<pre><code class="language-css">@charset "UTF-8";
+
+
+/* ============================================================================
+   @MASTER STYLESHEET
+   ========================================================================= */
+
+
+/**
+ * Scally, being an OO framework, works in keeping with the open/closed
+ * principle. Any custom styles *SHOULD NOT* be added or modified in Scally
+ * directly. This also allows the framework to be updated seamlessly.
+ *
+ * Contents:
+ *
+ * Your settings.........your project-specific settings.
+ * Scally framework......the entire Scally framework including your overrides.
+ * Your styles...........all your project-specific styles.
+ *
+ * N.B. the above order and the order within the Scally framework section must
+ * always be followed.
+ */
+
+
+
+
+/* Your settings
+   ========================================================================= */
+
+/**
+ * Your project-specific settings.
+ *
+ * N.B. define first so they can be used throughout your styles.
+ */
+
+@import "settings";
+
+
+
+
+/* Scally framework
+   ========================================================================= */
+
+/**
+ * By default everything is imported. But if you want to be selective and you
+ * definitely should, so your CSS is as lean as possible, then only import what
+ * you want. The Core section is however mandatory.
+ *
+ * Any settings you find set in Scally that you do not wish to keep, simply
+ * redefine above/below the relevant `@import`. This means that if Scally, for
+ * example, sets your `$font-size` at `16px` and you wish it to be `14px`,
+ * simply redeclare it above the relevant `@import`, like so:
+ *
+   $font-size: 14;
+   @import "bower_components/scally/core/settings/typography";
+ *
+ * If you want to use a Scally setting to override something then you need to
+ * define the override below the `@import`, like so:
+ *
+   @import "bower_components/scally/core/settings/colours";
+   $colour-text-base: $colour-brand;
+ *
+ * If you try to redeclare above the `@import` your Sass won't compile as you
+ * don't have access to the Scally setting at the point of compilation.
+ *
+ * All non-Core settings need to be overridden above the `@import`, like so:
+ *
+   $u-arrow-size-base: 14;
+   $u-arrow-colour: orange;
+   @import "bower_components/scally/utilities/u-arrow";
+ *
+ * Scally ignores its own settings in favour of using your own, so you can
+ * completely modify how Scally works without ever having to alter the
+ * framework itself.
+ *
+ * N.B. the order specified below must always be followed or Scally will
+ * break and if you're not using Bower or you customise where Bower installs
+ * then you'll need to update the `@import` paths accordingly.
+ *
+ * Contents:
+ *
+ * CORE
+ * LAYOUT
+ * COMPONENTS
+ * UTILITIES
+ */
+
+
+/**
+ * CORE.
+ *
+ * N.B. this is all mandatory for the Scally framework.
+ */
+
+// Settings
+@import "bower_components/scally/core/settings/typography";
+
+@import "bower_components/scally/core/settings/spacing";
+
+@import "bower_components/scally/core/settings/breakpoints";
+
+@import "bower_components/scally/core/settings/widths";
+
+@import "bower_components/scally/core/settings/colours";
+
+@import "bower_components/scally/core/settings/positioning";
+
+@import "bower_components/scally/core/settings/cosmetics";
+
+// Functions
+@import "bower_components/scally/core/functions/convert-px-to-em-rem";
+
+@import "bower_components/scally/core/functions/math-helpers";
+
+@import "bower_components/scally/core/functions/string-replace";
+
+// Mixins
+@import "bower_components/scally/core/mixins/convert-px-to-em-rem";
+
+@import "bower_components/scally/core/mixins/font-size";
+
+@import "bower_components/scally/core/mixins/gradients";
+
+@import "bower_components/scally/core/mixins/media-queries";
+
+@import "bower_components/scally/core/mixins/generate-at-breakpoints";
+
+@import "bower_components/scally/core/mixins/generate-percentage-classes-at-breakpoints";
+
+@import "bower_components/scally/core/mixins/retina-bg-image";
+
+@import "bower_components/scally/core/mixins/target-browsers";
+
+@import "bower_components/scally/core/mixins/target-headings";
+
+// Normalize
+@import "bower_components/scally/core/normalize";
+
+// Reset
+@import "bower_components/scally/core/reset";
+
+// Debug
+@import "bower_components/scally/core/debug";
+
+// Base
+@import "bower_components/scally/core/base/root";
+
+@import "bower_components/scally/core/base/abbreviation";
+
+@import "bower_components/scally/core/base/forms";
+
+@import "bower_components/scally/core/base/details";
+
+@import "bower_components/scally/core/base/headings";
+
+@import "bower_components/scally/core/base/horizontal-rule";
+
+@import "bower_components/scally/core/base/links";
+
+@import "bower_components/scally/core/base/media";
+
+@import "bower_components/scally/core/base/paragraphs";
+
+@import "bower_components/scally/core/base/print";
+
+@import "bower_components/scally/core/base/viewport";
+
+// Placeholders
+@import "bower_components/scally/core/placeholders/c-bottom-spacing";
+
+
+/**
+ * LAYOUT.
+ */
+
+// Main container
+@import "bower_components/scally/layout/l-container";
+
+// Grid
+@import "bower_components/scally/layout/l-grid";
+
+@import "bower_components/scally/layout/l-grid-pull";
+
+@import "bower_components/scally/layout/l-grid-push";
+
+// Side-by-side
+@import "bower_components/scally/layout/l-side-by-side";
+
+@import "bower_components/scally/layout/l-side-by-side-alt";
+
+
+/**
+ * COMPONENTS.
+ */
+
+@import "bower_components/scally/components/button";
+
+
+/**
+ * UTILITIES.
+ */
+
+@import "bower_components/scally/utilities/u-clear-fix";
+
+@import "bower_components/scally/utilities/u-arrow";
+
+@import "bower_components/scally/utilities/u-list";
+
+@import "bower_components/scally/utilities/u-list-block";
+
+@import "bower_components/scally/utilities/u-list-inline";
+
+@import "bower_components/scally/utilities/u-text";
+
+@import "bower_components/scally/utilities/u-widths";
+
+@import "bower_components/scally/utilities/u-table";
+
+@import "bower_components/scally/utilities/u-drop-down";
+
+@import "bower_components/scally/utilities/u-alignments";
+
+@import "bower_components/scally/utilities/u-toggle-visibility";
+
+@import "bower_components/scally/utilities/u-image-replacement";
+
+@import "bower_components/scally/utilities/u-link-complex";
+
+@import "bower_components/scally/utilities/u-link-disguised";
+
+@import "bower_components/scally/utilities/u-link-no-underline";
+
+@import "bower_components/scally/utilities/u-momentum-scrolling";
+
+@import "bower_components/scally/utilities/u-float";
+
+@import "bower_components/scally/utilities/u-new-block-formatting-context";
+
+@import "bower_components/scally/utilities/u-flex-embed";
+
+@import "bower_components/scally/utilities/u-gpu-accelerated";
+
+@import "bower_components/scally/utilities/u-position";
+
+@import "bower_components/scally/utilities/u-display";
+
+@import "bower_components/scally/utilities/u-spacing";
+
+@import "bower_components/scally/utilities/u-divider";
+
+@import "bower_components/scally/utilities/u-columns";
+
+@import "bower_components/scally/utilities/u-overflow";
+
+@import "bower_components/scally/utilities/u-overlay";
+
+@import "bower_components/scally/utilities/u-cursor";
+
+
+
+
+/* Your styles
+   ========================================================================= */</code></pre>
+
+   					<aside class="notes">
+   						<ul>
+   							<li>This is what you link to in your HTML Head.</li>
+   						</ul>
+   					</aside>
+					</section>
+
+					<section>
+						<h2>Settings</h2>
+						<div class="u-narrow-container u-narrow-container--wide u-text-align-left">
+							<p>You can completely modify how Scally works without ever having to alter the framework itself. Simply redeclare the settings you wish to change above the relevant <code class="language-">@import</code> in the master style sheet e.g.</p>
+<pre><code class="language-css">$font-size: 14;
+$font-family-base: Arial, sans-serif;
+@import "bower_components/scally/core/settings/typography";</code></pre>
+<pre><code class="language-css">$colour-brand: #2aa198;
+@import "bower_components/scally/core/settings/colours";</code></pre>
+<pre><code class="language-css">$text-input-and-select-text-color: $colour-text-base;
+@import "bower_components/scally/core/base/forms";</code></pre>
+						</div>
+					</section>
+
+					<section>
+						<h2>What's included</h2>
+						<div class="l-grid u-text-align-left">
+							<div class="l-grid__item u-one-quarter">
+								<h3>Core</h3>
+								<ul class="u-list-plain u-list-padding u-text-mono">
+									<li>/base</li>
+									<li>/functions</li>
+									<li>/mixins</li>
+									<li>/placeholders</li>
+									<li>/settings</li>
+									<li>_debug.scss</li>
+									<li>_normalize.scss</li>
+									<li>_reset.scss</li>
+								</ul>
+							</div>
+							<div class="l-grid__item u-one-quarter">
+								<h3>Layout</h3>
+								<ul class="u-list-plain u-list-padding u-text-mono">
+									<li>_l-container.scss</li>
+									<li>_l-grid.scss</li>
+									<li>_l-grid-pull.scss</li>
+									<li>_l-grid-push.scss</li>
+									<li>_l-side-by-side.scss</li>
+									<li>_l-side-by-side-alt.scss</li>
+								</ul>
+							</div>
+							<div class="l-grid__item u-one-quarter">
+								<h3>Components</h3>
+								<ul class="u-list-plain u-list-padding u-text-mono">
+									<li>button.scss</li>
+								</ul>
+							</div>
+							<div class="l-grid__item u-one-quarter">
+								<h3>Utilities</h3>
+								<ul class="u-list-plain u-list-padding u-text-mono">
+									<li>_u-alignments.scss</li>
+									<li>_u-arrow.scss</li>
+									<li>_u-clear-fix.scss</li>
+									<li>_u-columns.scss</li>
+									<li>_u-cursor.scss</li>
+									<li>_u-display.scss</li>
+									<li>_u-divider.scss</li>
+									<li>_u-drop-down.scss</li>
+									<li>_u-flex-embed.scss</li>
+									<li>_u-float.scss</li>
+									<li>_u-gpu-accelerated.scss</li>
+									<li>_u-image-replacement.scss</li>
+									<li>_u-link-complex.scss</li>
+									<li>_u-link-disguised.scss</li>
+									<li>_u-link-no-underline.scss</li>
+									<li>_u-list-block.scss</li>
+									<li>_u-list-inline.scss</li>
+									<li>_u-list.scss</li>
+									<li>_u-momentum-scrolling.scss</li>
+									<li>_u-new-block-formatting-context.scss</li>
+									<li>_u-overflow.scss</li>
+									<li>_u-overlay.scss</li>
+									<li>_u-position.scss</li>
+									<li>_u-spacing.scss</li>
+									<li>_u-table.scss</li>
+									<li>_u-text.scss</li>
+									<li>_u-toggle-visibility.scss</li>
+									<li>_u-widths.scss</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h2>The layout work horses</h2>
+					</section>
+
+					<section>
+						<h2 class="u-s-mb-none">Grid</h2>
+						<p>A powerful fluid and nestable mobile first grid system</p>
+						<div class="l-grid u-s-mb-20">
+					    <div class="l-grid__item  u-one-sixth-from-lap">
+					      <div class="u-position-relative  demo-block" style="height: 80px;">
+                  <div class="u-position-absolute u-position-pin-all"></div>
+                </div>
+					    </div>
+					    <div class="l-grid__item  u-one-sixth-from-lap">
+					      <div class="u-position-relative  demo-block" style="height: 80px;">
+                  <div class="u-position-absolute u-position-pin-all"></div>
+                </div>
+					    </div>
+					    <div class="l-grid__item  u-one-sixth-from-lap">
+					      <div class="u-position-relative  demo-block" style="height: 80px;">
+                  <div class="u-position-absolute u-position-pin-all"></div>
+                </div>
+					    </div>
+					    <div class="l-grid__item  u-one-sixth-from-lap">
+					      <div class="u-position-relative  demo-block" style="height: 80px;">
+                  <div class="u-position-absolute u-position-pin-all"></div>
+                </div>
+					    </div>
+					    <div class="l-grid__item  u-one-sixth-from-lap">
+					      <div class="u-position-relative  demo-block" style="height: 80px;">
+                  <div class="u-position-absolute u-position-pin-all"></div>
+                </div>
+					    </div>
+					    <div class="l-grid__item  u-one-sixth-from-lap">
+					      <div class="u-position-relative  demo-block" style="height: 80px;">
+                  <div class="u-position-absolute u-position-pin-all"></div>
+                </div>
+					    </div>
+					  </div>
+					  <div class="l-grid">
+					    <div class="l-grid__item  u-one-quarter-from-lap">
+					      <div class="u-position-relative  demo-block" style="height: 80px;">
+                  <div class="u-position-absolute u-position-pin-all"></div>
+                </div>
+					    </div>
+					    <div class="l-grid__item  u-one-quarter-from-lap">
+					      <div class="u-position-relative  demo-block" style="height: 80px;">
+                  <div class="u-position-absolute u-position-pin-all"></div>
+                </div>
+					    </div>
+					    <div class="l-grid__item  u-one-quarter-from-lap">
+					      <div class="u-position-relative  demo-block" style="height: 80px;">
+                  <div class="u-position-absolute u-position-pin-all"></div>
+                </div>
+					    </div>
+					    <div class="l-grid__item  u-one-quarter-from-lap">
+					      <div class="u-position-relative  demo-block" style="height: 80px;">
+                  <div class="u-position-absolute u-position-pin-all"></div>
+                </div>
+					    </div>
+					  </div>
+
+<pre><code class="language-css">/* ============================================================================
+   @LAYOUT -> GRID
+   ========================================================================= */
+
+
+/**
+ * A powerful fluid and nestable mobile first grid system.
+ *
+ * Combine with the viewport specific width classes found in Utilities ->
+ * Widths to apply grid widths at specific viewports, for example:
+ *
+   &lt;div class="l-grid__item u-one-half-from-lap u-one-third-from-desk"&gt;
+ *
+ * This would give you a grid item which is 100% width unless it is on a lap
+ * device, at which point it becomes 50% wide, or it is on a desktop device,
+ * at which point it becomes 33.333% width. See breakpoints set here: Core ->
+ * Settings -> Breakpoints.
+ *
+ * N.B. grid systems should be thought of as shelves. They contain content but
+ * are not content in themselves. You put up your shelves then fill them with
+ * your stuff. By setting up our grids separately to our components you can
+ * move components around a lot more easily than if they had dimensions
+ * applied to them; this makes our front-ends a lot more adaptable and quick
+ * to work with.
+ *
+ * N.B. you should never apply any styles to a grid item, they are for layout
+ * purposes only. Apply styling to content inside a grid item.
+ *
+ * @credit
+ * https://github.com/csswizardry/csswizardry-grids/blob/master/csswizardry-grids.scss
+ */
+
+
+/**
+ * Settings.
+ */
+
+/**
+ * Toggle on/off certain styles and treatments.
+ */
+
+$l-grid-apply-at-breakpoints:   $default-breakpoints !default;
+
+/**
+ * Gutter sizes.
+ */
+
+$l-grid-gutter-base:            $spacing-base !default;
+
+$l-grid-gutter-tiny:            $spacing-third !default;
+
+$l-grid-gutter-small:           $spacing-half !default;
+
+$l-grid-gutter-large:           $spacing-base-plus-half !default;
+
+$l-grid-gutter-huge:            $spacing-double !default;
+
+/**
+ * Box sizing.
+ *
+ * Here we set a variable assuming that `box-sizing: border-box;` is not set
+ * globally. If it has been previously been defined, the following variable
+ * will be overriden and will be set to `true`.
+ */
+
+$apply-friendly-box-model:      false !default;
+
+
+/**
+ * Grid container.
+ *
+ * 1. Negative `margin-left` to negate the columns gutters.
+ * 2. So it can work on inline elements e.g. `span`.
+ * 3. Dirty hack to remove browser generated whitespace between elements that
+ *    render as `display: inline-block`.
+ */
+
+.l-grid {
+  @include to-rem(margin-left, -$l-grid-gutter-base); // [1]
+  display: block; // [2]
+  font-size: 0; // [3]
+}
+
+
+  /**
+   * 1. Cause columns to stack side-by-side.
+   * 2. Space columns apart.
+   * 3. Full-width unless told to behave otherwise.
+   * 4. Align coloumns to the top of each other.
+   * 5. Reset font size to be the global default.
+   * 6. Required to combine fluid widths and fixed gutters.
+   */
+
+  .l-grid__item {
+    display: inline-block; // [1]
+    @include to-rem(padding-left, $l-grid-gutter-base); // [2]
+    width: 100%; // [3]
+    vertical-align: top; // [4]
+    @include font-size($font-size); // [5]
+
+    @if $apply-friendly-box-model == false {
+      box-sizing: border-box; // [6]
+    }//endif
+  }
+
+
+/**
+ * Modifier: gutterless.
+ */
+
+.l-grid--gutterless {
+  margin-left: 0;
+
+  > .l-grid__item {padding-left: 0;}
+}
+
+
+/**
+ * Modifier: gutter tiny.
+ */
+
+.l-grid--gutter-tiny {
+  @include to-rem(margin-left, -$l-grid-gutter-tiny);
+
+  > .l-grid__item {@include to-rem(padding-left, $l-grid-gutter-tiny);}
+}
+
+
+/**
+ * Modifier: gutter small.
+ */
+
+.l-grid--gutter-small {
+  @include to-rem(margin-left, -$l-grid-gutter-small);
+
+  > .l-grid__item {@include to-rem(padding-left, $l-grid-gutter-small);}
+}
+
+
+/**
+ * Modifier: gutter large.
+ */
+
+.l-grid--gutter-large {
+  @include to-rem(margin-left, -$l-grid-gutter-large);
+
+  > .l-grid__item {@include to-rem(padding-left, $l-grid-gutter-large);}
+}
+
+
+/**
+ * Modifier: gutter huge.
+ */
+
+.l-grid--gutter-huge {
+  @include to-rem(margin-left, -$l-grid-gutter-huge);
+
+  > .l-grid__item {@include to-rem(padding-left, $l-grid-gutter-huge);}
+}
+
+
+/**
+ * Modifier: reversed.
+ *
+ * Reversed rendered order of layout items, e.g. items 1, 2, 3, 4 in your
+ * markup will display in order 4, 3, 2, 1 on your page.
+ */
+
+.l-grid--reversed {
+  direction: rtl;
+  text-align: left;
+
+  > .l-grid__item {
+    direction: ltr;
+    text-align: left;
+  }
+}
+
+
+/**
+ * Modifier: vertical align middle.
+ */
+
+.l-grid--align-middle > .l-grid__item {vertical-align: middle;}
+
+
+/**
+ * Modifier: vertical align bottom.
+ */
+
+.l-grid--align-bottom > .l-grid__item {vertical-align: bottom;}
+
+
+/**
+ * Modifier: align right.
+ */
+
+.l-grid--align-right {
+  text-align: right;
+
+  > .l-grid__item {text-align: left;}
+}
+
+
+/**
+ * Modifier: align center.
+ */
+
+.l-grid--align-center {
+  text-align: center;
+
+  > .l-grid__item {text-align: left;}
+}
+
+
+/**
+ * Modifier: shrink wrap.
+ *
+ * Make it be the width of it's content.
+ */
+
+.l-grid--shrink-wrap > .l-grid__item {width: auto;}</code></pre>
+					</section>
+
+					<section>
+						<h2>Side-by-side</h2>
+						<p>Place any two elements side-by-side</p>
+						<div class="l-grid l-grid--gutter-huge">
+							<div class="l-grid__item u-one-half">
+								<div class="l-side-by-side">
+		              <div class="l-side-by-side__left">
+		                <div class="u-position-relative  demo-block" style="height: 80px; width: 80px;">
+		                  <div class="u-position-absolute u-position-pin-all"></div>
+		                </div>
+		              </div>
+		              <div class="l-side-by-side__right">
+		                <div class="u-position-relative  demo-block" style="height: 160px;">
+		                  <div class="u-position-absolute u-position-pin-all"></div>
+		                </div>
+		              </div>
+		            </div>
+							</div>
+							<div class="l-grid__item u-one-half">
+								<div class="l-side-by-side-alt l-side-by-side-alt--remove">
+		              <div class="l-side-by-side-alt__left">
+		                <div class="u-position-relative  demo-block" style="height: 80px; width: 80px;">
+		                  <div class="u-position-absolute u-position-pin-all"></div>
+		                </div>
+		              </div>
+		              <div class="l-side-by-side-alt__right">
+		                <div class="demo-block" style="height: 160px; overflow: hidden; color: #fff; cursor: default;">
+		               		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum doloremque cupiditate Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum doloremque cupiditate
+		                </div>
+		              </div>
+		            </div>
+							</div>
+						</div>
+
+<pre><code class="language-css">/* ============================================================================
+   @LAYOUT -> SIDE-BY-SIDE
+   ========================================================================= */
+
+
+/**
+ * Place any two elements side-by-side, typically for an image- and text-like
+ * content.
+ *
+ * @credit
+ * http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+ */
+
+
+/**
+ * Settings.
+ */
+
+// Toggle on/off certain styles and treatments
+
+// Make linear i.e. stack them
+$l-side-by-side-apply-linear:       true !default;
+
+// At what breakpoint to make linear? Can be one of the main breakpoints or any
+// interger
+// N.B. served via a `max-width` media query
+$l-side-by-side-apply-linear-when:  palm !default;
+
+// Gutter sizes
+$l-side-by-side-gutter-base:        $spacing-base !default;
+
+$l-side-by-side-gutter-tiny:        $spacing-third !default;
+
+$l-side-by-side-gutter-small:       $spacing-half !default;
+
+$l-side-by-side-gutter-large:       $spacing-base-plus-half !default;
+
+$l-side-by-side-gutter-huge:        $spacing-double !default;
+
+
+/**
+ * 1. So it can work on inline elements e.g. `span`.
+ */
+
+.l-side-by-side {
+  display: block; // [1]
+
+  // Clear fix
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+  /**
+   * Left side.
+   */
+
+  .l-side-by-side__left {
+    float: left;
+    @include to-rem(margin-right, $l-side-by-side-gutter-base);
+
+
+    /**
+     * Modifiers: gutter sizing.
+     */
+
+    // Tiny
+    .l-side-by-side--gutter-tiny > & {
+      @include to-rem(margin-right, $l-side-by-side-gutter-tiny);
+    }
+
+    // Small
+    .l-side-by-side--gutter-small > & {
+      @include to-rem(margin-right, $l-side-by-side-gutter-small);
+    }
+
+    // Large
+    .l-side-by-side--gutter-large > & {
+      @include to-rem(margin-right, $l-side-by-side-gutter-large);
+    }
+
+    // Huge
+    .l-side-by-side--gutter-huge > & {
+      @include to-rem(margin-right, $l-side-by-side-gutter-huge);
+    }
+
+
+    /**
+     * Modifiers: reversed.
+     *
+     * Switch the sides i.e. left becomes right and right becomes left.
+     */
+
+    .l-side-by-side--reversed > & {
+      float: right;
+      margin-right: 0;
+      @include to-rem(margin-left, $l-side-by-side-gutter-base);
+    }
+
+    // Reversed tiny gutter
+    .l-side-by-side--reversed.l-side-by-side--gutter-tiny > & {
+      @include to-rem(margin-left, $l-side-by-side-gutter-tiny);
+    }
+
+    // Reversed small gutter
+    .l-side-by-side--reversed.l-side-by-side--gutter-small > & {
+      @include to-rem(margin-left, $l-side-by-side-gutter-small);
+    }
+
+    // Reversed large gutter
+    .l-side-by-side--reversed.l-side-by-side--gutter-large > & {
+      @include to-rem(margin-left, $l-side-by-side-gutter-large);
+    }
+
+    // Reversed huge gutter
+    .l-side-by-side--reversed.l-side-by-side--gutter-huge > & {
+      @include to-rem(margin-left, $l-side-by-side-gutter-huge);
+    }
+
+
+    /**
+     * Modifier: flush.
+     *
+     * Remove the gutter.
+     */
+
+    .l-side-by-side--flush > & {margin-right: 0;}
+
+    // Reversed flush
+    .l-side-by-side--reversed.l-side-by-side--flush > & {margin-left: 0;}
+
+
+    /**
+     * Modifier: remove.
+     *
+     * Turn off the side-by-side layout so the two elements stack on top of
+     * each other at the palm breakpoint (or whatever you specify) and provide
+     * bottom spacing between the two elements via the gutter size settings.
+     *
+     * Make optional as this uses a fair amount of CSS.
+     *
+     * N.B. we use a `max-width` media query for this which is something we
+     * wouldn't usually do as we build Mobile First however this is simply the
+     * most pragmatic way of accomplishing this. Also this layout module's
+     * default state is side-by-side, so its stacked state is the exception,
+     * rather than the rule.
+     */
+
+    @if $l-side-by-side-apply-linear {
+      @include respond-to($l-side-by-side-apply-linear-when, max) {
+
+        .l-side-by-side--remove > & {
+          float: none;
+          margin-right: 0;
+          margin-left: 0;
+          @include to-rem(margin-bottom, $l-side-by-side-gutter-base);
+        }
+
+
+          /**
+           * Modifiers: bottom spacing sizing.
+           */
+
+          // Tiny
+          .l-side-by-side--remove.l-side-by-side--gutter-tiny > & {
+            @include to-rem(margin-bottom, $l-side-by-side-gutter-tiny);}
+
+          // Small
+          .l-side-by-side--remove.l-side-by-side--gutter-small > & {
+            @include to-rem(margin-bottom, $l-side-by-side-gutter-small);}
+
+          // Large
+          .l-side-by-side--remove.l-side-by-side--gutter-large > & {
+            @include to-rem(margin-bottom, $l-side-by-side-gutter-large);}
+
+          // Huge
+          .l-side-by-side--remove.l-side-by-side--gutter-huge > & {
+            @include to-rem(margin-bottom, $l-side-by-side-gutter-huge);}
+
+
+          /**
+           * Modifier: flush.
+           *
+           * Remove the bottom spacing.
+           */
+
+          .l-side-by-side--remove.l-side-by-side--flush > & {margin-bottom: 0;}
+      }
+
+    }// endif
+  }
+
+
+  /**
+   * Right side.
+   *
+   * 1. Create a new block formatting context (NBFC).
+   * 2. Avoid shrink-wrap behaviour of table-cell.
+   */
+
+  .l-side-by-side__right {
+    display: table-cell; // [1]
+    width: 10000px; // [2]
+  }</code></pre>
+
+  				<aside class="notes">
+  					<ul>
+  						<li>The poster child for OOCSS, created by Nicole Sullivan.</li>
+  					</ul>
+  				</aside>
+					</section>
+
+					<section>
+						<h2>Container</h2>
+						<div class="u-narrow-container u-text-align-center u-s-mb-40">
+							<p>A generic container that wraps all major layout pieces to keep layout consistent.</p>
+						</div>
+						<div class="l-container l-container--full-bleed demo-block-bg">
+							<div class="l-container">
+								<div class="demo-block" style="height: 160px;"></div>
+							</div>
+						</div>
+<pre><code class="language-css">/* ============================================================================
+   @LAYOUT -> CONTAINER
+   ========================================================================= */
+
+
+/**
+ * The main container that wraps all major layout pieces so that we keep all
+ * layout consistent. The container is responsive in that it will be a fluid
+ * width using '%' up until it hits it's maximum width. And it's center
+ * aligned by default.
+ */
+
+
+/**
+ * Settings.
+ */
+
+/**
+ * Toggle on/off certain styles and treatments.
+ */
+
+// Apply at these breakpoints
+$l-container-apply-at-breakpoints:                $default-breakpoints !default;
+
+// From the above choose what you want to apply it too
+$l-container-apply-breakpoints-for-default:       false !default;
+
+$l-container-apply-breakpoints-for-full-bleed:    false !default;
+
+$l-container-apply-breakpoints-for-not-centered:  false !default;
+
+/**
+ * Widths.
+ */
+
+$l-container-width:                               92% !default;
+
+$l-container-minimum-width:                       220 !default;
+
+$l-container-maximum-width:                       1600 !default;
+
+
+.l-container {
+  width: $l-container-width;
+  @include to-rem(min-width, $l-container-minimum-width);
+  @include to-rem(max-width, $l-container-maximum-width);
+  margin: 0 auto;
+
+  // Print
+  @media print {
+    width: auto;
+  }
+}
+
+@if $l-container-apply-breakpoints-for-default {
+  @include generate-at-breakpoints('.l-container', $l-container-breakpoints) {
+    width: $l-container-width;
+    @include to-rem(min-width, $l-container-minimum-width);
+    @include to-rem(max-width, $l-container-maximum-width);
+    margin: 0 auto;
+
+    // Print
+    @media print {
+      width: auto;
+    }
+  }
+}// end if
+
+
+/**
+ * Modifier: full bleed.
+ */
+
+.l-container--full-bleed {
+  width: auto;
+  max-width: none;
+}
+
+@if $l-container-apply-breakpoints-for-full-bleed {
+  @include generate-at-breakpoints('.l-container--full-bleed',
+    $l-container-breakpoints) {
+    width: auto;
+    max-width: none;
+  }
+}// end if
+
+
+/**
+ * Modifier: not centered.
+ */
+
+.l-container--not-centered {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@if $l-container-apply-breakpoints-for-not-centered {
+  @include generate-at-breakpoints('.l-container--not-centered',
+    $l-container-breakpoints) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}// end if</code></pre>
+					</section>
+
+					<section>
+						<h2><a href="https://github.com/chris-pearce/scally/tree/master/layout#how-to-use" target="_blank">A case study</a></h2>
+					</section>
+
+					<section>
+						<h2>Demonstration</h2>
+						<p><a href="http://chris-pearce.me/scally-preso/app-header/" target="_blank">The Campaign Monitor application header</a></p>
+						<div class="l-grid">
+							<div class="l-grid__item u-one-half">
+								<p class="u-s-mt-none"><strong>Scally version</strong></p>
+								<p><strong>40</strong> lines <br><strong>4kb</strong> minified &amp; gzipped</p>
+							</div>
+							<div class="l-grid__item u-one-half">
+								<p class="u-s-mt-none"><strong>Current version</strong></p>
+							</div>
+						</div>
 					</section>
 
 					<section>
 						<h2>Westfield Ticketless Parking UI</h2>
-						<img src="lib/img/westfield carpark ui.gif" alt="" class="stretch">
-						<p class="u-text-size-small">Minified &amp; gzipped: <strong>14kb</strong> (total weight) / <strong>5kb</strong> (total weight of custom CSS).</p>
+						<img src="lib/img/westfield-carpark-ui.gif" alt="" class="stretch">
+						<p class="u-text-size-small"><strong>14kb</strong> minified &amp; gzipped (total weight) / <strong>5kb</strong> (total weight of custom CSS)</p>
 					</section>
 
 					<section>
 						<h2>BEM</h2>
-						<p>The naming convention follows this pattern:</p>
-						<pre><code class="language-css">.block {}
+						<div class="u-narrow-container u-text-align-left">
+							<p>The BEM naming convention follows this pattern:</p>
+<pre><code class="language-css">.block {}
 .block__element {}
 .block--modifier {}</code></pre>
-						<ul class="language-css">
-						  <li><code class="token selector">.block</code> represents the higher level of an abstraction or component.</li>
-						  <li><code class="token selector">.block__element</code> represents a descendent of <code class="token selector">.block</code> that helps form <code class="token selector">.block</code>
-						as a whole.</li>
-						  <li><code class="token selector">.block--modifier</code> represents a different state or version of <code class="token selector">.block</code>.</li>
-						</ul>
-					</section>
-				</section>
-				<!-- //SLIDE 6 -->
-
-
-
-				<!-- SLIDE 7 -->
-				<section>
-
-					<section>
-						<h2>The driving principle</h2>
-						<blockquote>When I start a new project, I assume it will eventually be open sourced (even if it's unlikely). This mindset leads to effortless modularization. If you think about how other people outside your company might use your code, you become much less likely to bake in proprietary configuration details or tightly coupled interfaces. This, in turn, leads to cleaner, more maintainable code. Even internal code should pretend to be open source code.</blockquote>
-						<cite class="u-text-size-small"><a href="http://tom.preston-werner.com/2011/11/22/open-source-everything.html" target="_blank">Open Source (Almost) Everything</a> by Tom Preston-Werner</cite>
-
-						<aside class="notes">
-							<ul>
-								<li>.</li>
-								<li>Forces you to scrutinise over everything you do as every bit of Scally needs to work in a way that does one thing and one thing only. The open/closed principle.</li>
+							<ul class="language-css">
+							  <li><code class="token selector">.block</code> represents the higher level of an abstraction or component.</li>
+							  <li><code class="token selector">.block__element</code> represents a descendent of <code class="token selector">.block</code> that helps form <code class="token selector">.block</code>
+							as a whole.</li>
+							  <li><code class="token selector">.block--modifier</code> represents a different state or version of <code class="token selector">.block</code>.</li>
 							</ul>
-						</aside>
+						</div>
 					</section>
 				</section>
 				<!-- //SLIDE 7 -->
+
+
+
+
+				<!-- SLIDE 8 -->
+				<section class="tropical-gradient">
+					<h1>Thank you</h1>
+					<p>
+						<a href="https://github.com/chris-pearce/scally" target="_blank">github.com/chris-pearce/scally</a><br>
+						<a href="" target="_blank">scally.chris-pearce.me</a><br>
+						<a href="" target="_blank">scally.chris-pearce.me/presentation</a>
+					</p>
+				</section>
+				<!-- //SLIDE 8 -->
 
 
 
@@ -340,6 +1498,7 @@
 				progress: true,
 				history: true,
 				center: true,
+				width: 1200,
 
 				// Tranisition type
 				transition: 'concave', // none/fade/slide/convex/concave/zoom

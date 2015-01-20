@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1327px" height="456px" viewBox="0 0 1327 456" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Stacked concept</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0.25781251%" y1="49.7500002%" x2="101.257813%" y2="49.7500002%" id="linearGradient-1">
+            <stop stop-color="#BF2E44" offset="0%"></stop>
+            <stop stop-color="#FE536E" offset="47.5247532%"></stop>
+            <stop stop-color="#FAAD0A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#19A9E6" offset="0%"></stop>
+            <stop stop-color="#72D0EB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Stacked-concept" sketch:type="MSLayerGroup">
+            <path d="M1153.27662,92.8334007 L1265.67162,225.752775 L112.824691,455.166606 L0.4296875,238.615513 L1153.27662,92.8334007 Z" id="Rectangle-20" fill="url(#linearGradient-1)" sketch:type="MSShapeGroup"></path>
+            <path d="M1167.32446,73.6056925 L1279.71946,206.525067 L126.872529,435.938897 L14.4775254,219.387805 L1167.32446,73.6056925 Z" id="Rectangle-21" stroke="#FFFFFF" fill-opacity="0.8" fill="url(#linearGradient-1)" sketch:type="MSShapeGroup"></path>
+            <path d="M1180.43577,56.4127576 L1292.83078,189.332132 L139.983844,418.745962 L27.5888408,202.19487 L1180.43577,56.4127576 Z" id="Rectangle-22" stroke="#FFFFFF" fill-opacity="0.6" fill="url(#linearGradient-1)" sketch:type="MSShapeGroup"></path>
+            <path d="M1191.87062,37.71875 L1304.26562,170.638125 L151.418691,400.051955 L39.0236883,183.500863 L1191.87062,37.71875 Z" id="Rectangle-23" stroke="#FFFFFF" fill-opacity="0.4" fill="url(#linearGradient-1)" sketch:type="MSShapeGroup"></path>
+            <path d="M1200.27662,19.8334007 L1312.67162,152.752775 L159.824691,382.166606 L47.4296875,165.615513 L1200.27662,19.8334007 Z" id="Rectangle-24" fill="url(#linearGradient-2)" sketch:type="MSShapeGroup"></path>
+            <path d="M1214.32446,0.605692543 L1326.71946,133.525067 L173.872529,362.938897 L61.4775254,146.387805 L1214.32446,0.605692543 Z" id="Rectangle-25" stroke="#FFFFFF" fill-opacity="0.8" fill="url(#linearGradient-2)" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

@@ -1,4 +1,3 @@
-@import url(../../lib/css/prism-twilight.css);
 /**
  * Scally theme for reveal.js.
  *
@@ -53,7 +52,7 @@ body {
   font-size: 1.5em; }
 
 .reveal h3 {
-  font-size: 1.3em; }
+  font-size: 1em; }
 
 .reveal h4 {
   font-size: 1em; }
@@ -200,7 +199,7 @@ body {
   transition: color 0.15s ease; }
 
 .reveal a:hover {
-  color: #d86274;
+  color: #962536;
   text-shadow: none;
   border: none; }
 
@@ -243,16 +242,16 @@ body {
   border-top-color: #bf2f44; }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #d86274; }
+  border-right-color: #962536; }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #d86274; }
+  border-left-color: #962536; }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #d86274; }
+  border-bottom-color: #962536; }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #d86274; }
+  border-top-color: #962536; }
 
 /*********************************************
  * PROGRESS BAR
@@ -278,7 +277,16 @@ body {
 .reveal {
   font-weight: 300;
   /**
+   * Set line heights.
+   */
+  /**
+   * Links.
+   */
+  /**
    * Headings.
+   */
+  /**
+   * Paragraphs.
    */
   /**
    * Code.
@@ -303,22 +311,45 @@ body {
    */
   /**
    * Progress bar.
-   */ }
+   */
+  /**
+   * Backgrounds.
+   */
+  /**
+     * Demo blocks.
+     */ }
+  .reveal p, .reveal ul, .reveal ol, .reveal blockquote {
+    line-height: 1.45; }
+  .reveal a:hover, .reveal a:focus {
+    text-decoration: none; }
   .reveal h2 {
     margin-bottom: 50px; }
+  .reveal h3 {
+    font-weight: 700; }
+  .reveal p {
+    margin: 40px 0; }
   .reveal pre[class*="language-"] {
     padding: 20px !important;
-    max-height: 212px;
+    max-height: 400px;
+    margin-bottom: 40px !important;
     border: 0 !important;
     box-shadow: none !important; }
+    .reveal pre[class*="language-"]:last-child {
+      margin-bottom: 0 !important; }
     .reveal pre[class*="language-"] code[class*="language-"] {
       display: block !important; }
   .reveal code {
     font-size: 0.7em !important; }
+  .reveal .code-large {
+    padding: 10px;
+    font-size: 1em !important; }
   .reveal section img {
     margin: 0;
     background: none;
     border: 0;
+    box-shadow: none; }
+  .reveal a:hover img, .reveal a:focus img {
+    background: none;
     box-shadow: none; }
   .reveal iframe {
     margin-left: auto !important;
@@ -328,7 +359,13 @@ body {
     font-style: italic;
     font-weight: 100;
     text-align: left;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    border-left: 2px solid #bf2f44;
+    padding: 5px 0 5px 20px; }
+    iframe .reveal blockquote {
+      border: 0 !important;
+      margin-bottom: 0 !important;
+      padding: 0 !important; }
   .reveal cite {
     display: block;
     text-align: left; }
@@ -366,6 +403,16 @@ body {
     background-image: linear-gradient(-90deg, #f9ac0a 0%, #fd536f 50%, #bf2f44 100%); }
     .reveal .progress span {
       background: white; }
+  .reveal .tropical-gradient *, .reveal .tropical-gradient a:hover, .reveal .tropical-gradient a:focus {
+    color: white; }
+  .reveal .tropical-gradient a {
+    transition: opacity 0.2s; }
+  .reveal .tropical-gradient a:hover, .reveal .tropical-gradient a:focus {
+    opacity: 0.7; }
+  .reveal .demo-block {
+    border: 1px solid #bf2f44; }
+  .reveal .demo-block-bg {
+    background: #eee; }
 
 /**
  * Backgrounds.
@@ -387,6 +434,45 @@ body {
 .u-text-align-center {
   text-align: center !important; }
 
-/**
- * Code highlighting.
- */
+.u-text-align-left {
+  text-align: left !important; }
+
+.u-text-align-right {
+  text-align: right !important; }
+
+.u-s-m-none {
+  margin: 0 !important; }
+
+.u-s-mb-none {
+  margin-bottom: 0 !important; }
+
+.u-s-mt-none {
+  margin-top: 0 !important; }
+
+.u-s-mb-20 {
+  margin-bottom: 20px !important; }
+
+.u-s-mb-40 {
+  margin-bottom: 40px !important; }
+
+.u-s-mb-100 {
+  margin-bottom: 100px !important; }
+
+.u-list-plain {
+  margin: 0 !important;
+  list-style: none !important; }
+
+.u-list-padding > li {
+  margin-bottom: 5px !important; }
+
+.u-text-mono {
+  font-family: Consolas, Monaco, 'Andale Mono', monospace !important;
+  font-size: 0.75em !important;
+  color: #666; }
+  .u-text-mono code {
+    font-size: 100% !important; }
+
+.u-narrow-container {
+  max-width: 900px !important;
+  margin-left: auto !important;
+  margin-right: auto !important; }

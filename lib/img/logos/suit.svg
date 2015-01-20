@@ -1,0 +1,16 @@
+<svg width="259px" height="75px" viewBox="0 0 259 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 1 + SUIT CSS</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-5.000000, -9.000000)">
+            <g id="Rectangle-1-+-SUIT-CSS" sketch:type="MSLayerGroup" transform="translate(5.000000, 9.000000)">
+                <rect id="Rectangle-1" stroke="#2E83B3" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="0" width="259" height="75" rx="8"></rect>
+                <text id="SUIT-CSS" sketch:type="MSTextLayer" font-family="Microsoft Sans Serif" font-size="48" font-weight="normal" fill="#2E83B3">
+                    <tspan x="19" y="55">SUIT CSS</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

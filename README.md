@@ -5,10 +5,10 @@ A presentation built in: <https://github.com/hakimel/reveal.js> for the
 
 ## TODO
 
--	Change code highlighting theme.
 - Favicon.
 - Create a sub domain for Scally.
 - Sync with DB.
+- Make it performant.
 
 ## Ideas
 
@@ -64,7 +64,7 @@ A presentation built in: <https://github.com/hakimel/reveal.js> for the
 		- Grid
 - How it can help CM
 	-	Ensure consistency, look at spacing.
-	- Reduce the need for testings.
+	- Reduce the need for testing.
 	- Release features a lot faster.
 	- Introduce a CM specific layer on top of Scally, Scally is the scafholding, lick of paint.
 - That's a wrap
@@ -80,16 +80,16 @@ A presentation built in: <https://github.com/hakimel/reveal.js> for the
 
 ### Other
 
-- OO programming principles
 - Grab all the CodePen code from WF Labs.
 - Demo it by showing the CM app built in it
 - Show examples of the legacy CSS
-- Screen shots of the app and highlight areas where Scally can be used.
-- Foundation problems:
-	- Too opinionated e.g. table element comes with too many styles: zebra
-		strips, cell padding.
 - Quotes:
 	>> When I start a new project, I assume it will eventually be open sourced (even if it's unlikely). This mindset leads to effortless modularization. If you think about how other people outside your company might use your code, you become much less likely to bake in proprietary configuration details or tightly coupled interfaces. This, in turn, leads to cleaner, more maintainable code. Even internal code should pretend to be open source code.
 	http://tom.preston-werner.com/2011/11/22/open-source-everything.html
 	>> “Meanwhile, CSS is a simple language. Sass, being intended to write CSS, should not get much more complex than regular CSS. The KISS principle (Keep It Simple Stupid) is key here and may even take precedence over the DRY principle (Don’t Repeat Yourself) in some circumstances.”
 	>> CSS had been left to people with a designer’s mind; any code needs the mind of a developer applied to it, someone who gets DRYness, abstraction, efficiency, etc.
+
+#### Ask Kate
+
+- What Scally can really help with?
+- Not sure about the Foundation feedback from you? Might be too bitchy?
